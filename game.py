@@ -353,8 +353,8 @@ def move(exits, direction):
     return rooms[exits[direction]]
 
 
-def victorious():
-    #Enter victory conditions
+def end_conditions():
+    #Enter end conditions
     pass
 
 
@@ -366,7 +366,7 @@ find all of the items spread through the various rooms
 and drop them here in reception.""")
 
     # Main game loop
-    while not victorious():
+    while not end_conditions():
         # Display game status (room description, inventory etc.)
         print_room(current_room)
         print_inventory_items(inventory)

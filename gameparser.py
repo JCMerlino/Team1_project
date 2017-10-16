@@ -1,18 +1,10 @@
 import string
 
 # List of "unimportant" words (feel free to add more)
-skip_words = ['a', 'about', 'all', 'an', 'another', 'any', 'around', 'at',
-              'bad', 'beautiful', 'been', 'better', 'big', 'can', 'every', 'for',
-              'from', 'good', 'have', 'her', 'here', 'hers', 'his', 'how',
-              'i', 'if', 'in', 'into', 'is', 'it', 'its', 'large', 'later',
-              'like', 'little', 'main', 'me', 'mine', 'more', 'my', 'now',
-              'of', 'off', 'oh', 'on', 'please', 'small', 'some', 'soon',
-              'that', 'the', 'then', 'this', 'those', 'through', 'till', 'to',
-              'towards', 'until', 'us', 'want', 'we', 'what', 'when', 'why',
-              'wish', 'with', 'would']
+keywords = list()
 
 
-def filter_words(words, skip_words):
+def filter_words(words, keywords):
     """This function takes a list of words and returns a copy of the list from
     which all words provided in the list skip_words have been removed.
     For example:
@@ -31,7 +23,7 @@ def filter_words(words, skip_words):
     pos = 0
     while not stop:
         try:
-            if words[pos] in skip_words:
+            if words[pos] not in keywords:
                 words.pop(pos)
             else:
                 pos += 1
@@ -91,4 +83,4 @@ def normalise_input(user_input):
     no_punct = remove_punct(user_input).lower()
     list_no_punct = no_punct.split()
 
-    return filter_words(list_no_punct, skip_words)
+    return filter_words(list_no_punct, keywords)
