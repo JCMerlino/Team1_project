@@ -4,6 +4,7 @@ from map import rooms
 from player import *
 from items import *
 from gameparser import *
+from commands import *
 
 
 def list_of_items(items):
@@ -217,19 +218,6 @@ def is_valid_exit(exits, chosen_exit):
     return chosen_exit in exits
 
 
-def execute_go(direction):
-    """This function, given the direction (e.g. "south") updates the current room
-    to reflect the movement of the player if the direction is a valid exit
-    (and prints the name of the room into which the player is
-    moving). Otherwise, it prints "You cannot go there."
-    """
-    global current_room
-    if is_valid_exit(current_room["exits"], direction):
-        current_room = rooms[current_room["exits"][direction]]
-    else:
-        print("You cannot go there")
-
-
 def check_mass(pos):
     total_mass = current_room["items"][pos]["mass"]
     for item in inventory:
@@ -238,48 +226,6 @@ def check_mass(pos):
         return True
     else:
         return False
-
-
-def execute_take(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    list of items in the current room to the player's inventory. However, if
-    there is no such item in the room, this function prints
-    "You cannot take that."
-    """
-    found = False
-    pos = 0
-    while not found and pos != len(current_room["items"]):
-        if current_room["items"][pos]["id"] == item_id:
-            found = True
-        else:
-            pos += 1
-
-    if found:
-        if check_mass(pos):
-            inventory.append(current_room["items"].pop(pos))
-        else:
-            print("Total mass of objects over 3kg, drop something before picking object up.")
-    else:
-        print("You cannot take that.")
-
-
-def execute_drop(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    player's inventory to list of items in the current room. However, if there is
-    no such item in the inventory, this function prints "You cannot drop that."
-    """
-    found = False
-    pos = 0
-    while not found and pos != len(inventory):
-        if inventory[pos]["id"] == item_id:
-            found = True
-        else:
-            pos += 1
-
-    if found:
-        current_room["items"].append(inventory.pop(pos))
-    else:
-        print("You cannot drop that.")
 
 
 def execute_command(command):
@@ -295,19 +241,19 @@ def execute_command(command):
 
     if command[0] == "go":
         if len(command) > 1:
-            execute_go(command[1])
+            execute.go(command[1])
         else:
             print("Go where?")
 
     elif command[0] == "take":
         if len(command) > 1:
-            execute_take(command[1])
+            execute.take(command[1])
         else:
             print("Take what?")
 
     elif command[0] == "drop":
         if len(command) > 1:
-            execute_drop(command[1])
+            execute.drop(command[1])
         else:
             print("Drop what?")
 
@@ -334,23 +280,6 @@ def menu(exits, room_items, inv_items):
     normalised_user_input = normalise_input(user_input)
 
     return normalised_user_input
-
-
-def move(exits, direction):
-    """This function returns the room into which the player will move if, from a
-    dictionary "exits" of avaiable exits, they choose to move towards the exit
-    with the name given by "direction". For example:
-
-    >>> move(rooms["Reception"]["exits"], "south") == rooms["Admins"]
-    True
-    >>> move(rooms["Reception"]["exits"], "east") == rooms["Tutor"]
-    True
-    >>> move(rooms["Reception"]["exits"], "west") == rooms["Office"]
-    False
-    """
-
-    # Next room to go to
-    return rooms[exits[direction]]
 
 
 def end_conditions():
