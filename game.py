@@ -4,6 +4,7 @@ from map import rooms
 from player import *
 from items import *
 from gameparser import *
+from commands import *
 
 
 def list_of_items(items):
@@ -217,61 +218,7 @@ def is_valid_exit(exits, chosen_exit):
     return chosen_exit in exits
 
 
-def execute_go(direction):
-    """This function, given the direction (e.g. "south") updates the current room
-    to reflect the movement of the player if the direction is a valid exit
-    (and prints the name of the room into which the player is
-    moving). Otherwise, it prints "You cannot go there."
-    """
-    global current_room
-    if is_valid_exit(current_room["exits"], direction):
-        current_room = rooms[current_room["exits"][direction]]
-    else:
-        print("You cannot go there")
-
-
-def execute_take(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    list of items in the current room to the player's inventory. However, if
-    there is no such item in the room, this function prints
-    "You cannot take that."
-    """
-    found = False
-    pos = 0
-    while not found and pos != len(current_room["items"]):
-        if current_room["items"][pos]["id"] == item_id:
-            found = True
-        else:
-            pos += 1
-
-    if found and check_player_mass(pos):
-            inventory.append(current_room["items"].pop(pos))
-    elif not found:
-        print("You cannot take that.")
-    else:
-        print("Total mass of objects over 3kg, drop something before picking object up.")
-
-
-def execute_drop(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    player's inventory to list of items in the current room. However, if there is
-    no such item in the inventory, this function prints "You cannot drop that."
-    """
-    found = False
-    pos = 0
-    while not found and pos != len(inventory):
-        if inventory[pos]["id"] == item_id:
-            found = True
-        else:
-            pos += 1
-
-    if found:
-        current_room["items"].append(inventory.pop(pos))
-    else:
-        print("You cannot drop that.")
-
-
-def check_player_mass(pos):
+def check_player_mass(pos, current_room):
     MASS_ALLOWED = 3
     total_mass = current_room["items"][pos]["mass"]
     for item in inventory:
@@ -280,22 +227,6 @@ def check_player_mass(pos):
         return True
     else:
         return False
-    """This function takes an item_id as an argument and moves this item from the
-    player's inventory to list of items in the current room. However, if there is
-    no such item in the inventory, this function prints "You cannot drop that."
-    """
-    found = False
-    pos = 0
-    while not found and pos != len(inventory):
-        if inventory[pos]["id"] == item_id:
-            found = True
-        else:
-            pos += 1
-
-    if found:
-        current_room["items"].append(inventory.pop(pos))
-    else:
-        print("You cannot drop that.")
 
 
 def execute_command(command):
@@ -305,25 +236,25 @@ def execute_command(command):
     execute_take, or execute_drop, supplying the second word as the argument.
 
     """
-
+    global current_room
     if 0 == len(command):
         return
 
     if command[0] == "go":
         if len(command) > 1:
-            execute_go(command[1])
+            current_room = execute.go(command[1], current_room)
         else:
             print("Go where?")
 
     elif command[0] == "take":
         if len(command) > 1:
-            execute_take(command[1])
+            execute.take(command[1], current_room)
         else:
             print("Take what?")
 
     elif command[0] == "drop":
         if len(command) > 1:
-            execute_drop(command[1])
+            execute.drop(command[1], current_room)
         else:
             print("Drop what?")
 
@@ -375,7 +306,7 @@ def end_condition():
 
 # This is the entry point of our program
 def main():
-
+    global current_room
     print("""Welcome! In order to beat this game you must
 find all of the items spread through the various rooms
 and drop them here in reception.""")
