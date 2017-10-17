@@ -17,6 +17,7 @@ class execute:
             return rooms[current_room["exits"][direction]]
         else:
             print("You cannot go there")
+            return current_room
 
     def take(item_id, current_room):
         """This function takes an item_id as an argument and moves this item from the
