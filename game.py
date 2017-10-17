@@ -244,19 +244,42 @@ def execute_take(item_id):
         else:
             pos += 1
 
-    if found:
-        total_mass = current_room["items"][pos]["mass"]
-        for item in inventory:
-            total_mass += item["mass"]
-        if total_mass <= 3:
+    if found and check_player_mass(pos):
             inventory.append(current_room["items"].pop(pos))
-        else:
-            print("Total mass of objects over 3kg, drop something before picking object up.")
-    else:
+    elif not found:
         print("You cannot take that.")
+    else:
+        print("Total mass of objects over 3kg, drop something before picking object up.")
 
 
 def execute_drop(item_id):
+    """This function takes an item_id as an argument and moves this item from the
+    player's inventory to list of items in the current room. However, if there is
+    no such item in the inventory, this function prints "You cannot drop that."
+    """
+    found = False
+    pos = 0
+    while not found and pos != len(inventory):
+        if inventory[pos]["id"] == item_id:
+            found = True
+        else:
+            pos += 1
+
+    if found:
+        current_room["items"].append(inventory.pop(pos))
+    else:
+        print("You cannot drop that.")
+
+
+def check_player_mass(pos):
+    MASS_ALLOWED = 3
+    total_mass = current_room["items"][pos]["mass"]
+    for item in inventory:
+        total_mass += item["mass"]
+    if total_mass <= MASS_ALLOWED:
+        return True
+    else:
+        return False
     """This function takes an item_id as an argument and moves this item from the
     player's inventory to list of items in the current room. However, if there is
     no such item in the inventory, this function prints "You cannot drop that."
