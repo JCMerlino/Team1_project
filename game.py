@@ -346,6 +346,10 @@ def move(exits, direction):
     return rooms[exits[direction]]
 
 
+def end_condition():
+    return False
+
+
 # This is the entry point of our program
 def main():
 
@@ -354,7 +358,7 @@ find all of the items spread through the various rooms
 and drop them here in reception.""")
 
     # Main game loop
-    while len(rooms["Reception"]["items"]) < 6:
+    while not end_condition():
         # Display game status (room description, inventory etc.)
         print_room(current_room)
         print_inventory_items(inventory)
