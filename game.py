@@ -193,9 +193,12 @@ def print_menu(exits, room_items, inv_items):
 
     for item in room_items:
         print("TAKE {0} to take {1}.".format(item["id"].upper(), item["name"]))
+        print("INSPECT {0} to inspect {1}.".format(item["id"].upper(), item["name"]))
 
     for item in inv_items:
         print("DROP {0} to drop {1}.".format(item["id"].upper(), item["name"]))
+        print("INSPECT {0} to inspect {1}.".format(item["id"].upper(), item["name"]))
+    print("INSPECT ROOM")
 
     print("What do you want to do?")
 
@@ -258,6 +261,11 @@ def execute_command(command):
             execute.drop(command[1], current_room)
         else:
             print("Drop what?")
+    elif command[0] == "inspect":
+        if len(command) >1:
+            execute.inspect(command[1], current_room)
+        else:
+            print("Inspect what?")
 
     else:
         print("This makes no sense.")

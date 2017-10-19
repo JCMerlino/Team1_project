@@ -57,3 +57,24 @@ class execute:
             current_room["items"].append(inventory.pop(pos))
         else:
             print("You cannot drop that.")
+            
+    def inspect(inspected_object, current_room):
+        """ this function gives a different description of the room"""
+        if inspected_object == "room":
+            print(current_room["inspection"])
+        else:
+            found = False
+            for pos in range(len(current_room["items"])):
+                if inspected_object in current_room["items"][pos]["id"]:
+                    item_id = current_room["items"][pos]
+                    found = True
+            
+            for pos in range(len(inventory)):
+                if inspected_object in inventory[pos]["id"]:
+                    item_id = inventory[pos]
+                    found = True
+            if found:    
+                item_id["picture"]
+                print(item_id["description"])
+            else:
+                print("The object is not in the room")
