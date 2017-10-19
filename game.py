@@ -5,6 +5,7 @@ from player import *
 from items import *
 from gameparser import *
 from commands import *
+from ascii_art import *
 
 
 def list_of_items(items):
@@ -307,9 +308,7 @@ def end_condition():
 # This is the entry point of our program
 def main():
     global current_room
-    print("""Welcome! In order to beat this game you must
-find all of the items spread through the various rooms
-and drop them here in reception.""")
+    start_menu()
 
     # Main game loop
     while not end_condition():
