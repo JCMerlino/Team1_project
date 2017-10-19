@@ -261,8 +261,9 @@ def execute_command(command):
             execute.drop(command[1], current_room)
         else:
             print("Drop what?")
+
     elif command[0] == "inspect":
-        if len(command) >1:
+        if len(command) > 1:
             execute.inspect(command[1], current_room)
         else:
             print("Inspect what?")
