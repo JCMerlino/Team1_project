@@ -1,10 +1,10 @@
 from items import *
 
-room_Stairs1 = {
+room_stairs1 = {
     "name": "Stairs (First Floor)",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"down": "Stairs2", "west": "Reception"},
 
@@ -15,9 +15,9 @@ room_reception = {
     "name": "Reception",
 
     "description":
-#insert description
+    """ words""",
 
-    "exits":  {"north": "Mallory", "south": "Armory", "east": "Stairs1"},
+    "exits": {"north": "Mallory", "south": "Armory", "east": "Stairs1"},
 
     "items": []
 }
@@ -26,7 +26,7 @@ room_stairs2 = {
     "name": "Stairs (Ground Floor)",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Pam"},
 
@@ -37,7 +37,7 @@ room_office_pam = {
     "name": "Office (Pam's desk)",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"east": "Stairs2", "south": "Science", "north": "Break"},
 
@@ -48,7 +48,7 @@ room_science = {
     "name": "Science Lab",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"north": "Office Pam", "west": "Storage"},
 
@@ -59,7 +59,7 @@ room_break = {
     "name": "the Break Room",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"south": "Office Pam", "west": "Meeting"},
 
@@ -70,7 +70,7 @@ room_meeting = {
     "name": "the Meeting Room",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"east": "Break", "south": "Office Cyril"},
 
@@ -81,7 +81,7 @@ room_office_cyril = {
     "name": "Office (Cyril's desk)",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"north": "Meeting", "west": "Toilet", "east": "Office Pam", "south": "Storage"},
 
@@ -92,7 +92,7 @@ room_storage = {
     "name": "the Storage Room",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"north": "Office Cyril", "east": "Science"},
 
@@ -103,7 +103,7 @@ room_toilet = {
     "name": "the Toilet",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": { "east": "Office Cyril"},
 
@@ -114,7 +114,7 @@ room_stairs3 = {
     "name": "Stairs (the Basement)",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"up": "Stairs2", "west": "Hallway east"},
 
@@ -125,7 +125,7 @@ room_hallway_east = {
     "name": "East Hallway",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"east": "Stairs3", "west": "Hallway west", "north": "Generator"},
 
@@ -136,7 +136,7 @@ room_generator = {
     "name": "Generator Room",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"south": "Hallway east", "west": "Computer"},
 
@@ -147,7 +147,7 @@ room_computer = {
     "name": "Computer Mainframe",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"east": "Generator", "south": "Hallway west"},
 
@@ -158,7 +158,7 @@ room_hallway_west = {
     "name": "West Hallway",
 
     "description":
-#insert description
+    """ words""",
 
     "exits": {"up": "Computer", "east": "Hallway east", "south": "Vault"},
 
