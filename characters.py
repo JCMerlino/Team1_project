@@ -1,10 +1,4 @@
 from items import *
-from map import rooms
-
-# Start game at the Mallory
-current_room = rooms["Mallory"]
-
-
 
 Bruce = {
 
@@ -13,9 +7,8 @@ Bruce = {
     "description":
     "Bruce is a world renound spy, with incredible skill and combat abilities.",
 
-	inventory = []
+    "inventory": []
 
-    
 }
 
 Samantha = {
@@ -25,7 +18,7 @@ Samantha = {
     "description":
     "Samantha is Bruce's boss, she is ruthless and wants the job done!",
 
-    inventory = []
+    "inventory": []
 
 }
 
@@ -35,7 +28,7 @@ Jenifer = {
     "description":
     "Jenifer is Samantha's secretary, she is useless at her job",
 
-	inventory = []
+    "inventory": []
 }
 
 Debra = {
@@ -44,6 +37,8 @@ Debra = {
 
     "description":
     "Debra is head of Human Resources ",
+
+    "inventory": []
 
 }
 
@@ -55,7 +50,7 @@ Bob = {
     "description":
     "Bob is the Document manager",
 
-	inventory = []
+    "inventory": []
 
 }
 
@@ -66,7 +61,7 @@ Stephen = {
     "description":
     "Stephen is the technician for the agency",
 
-	inventory = []
+    "inventory": []
 
 }
 
@@ -77,7 +72,6 @@ Alexa = {
     "description":
     "Alexa is a spy, she is very rude and harsh",
 
-	inventory = []
-    
-}
+    "inventory": []
 
+}
