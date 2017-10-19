@@ -8,9 +8,9 @@ item_usb = {
 
     "description":
     """Stephen gave me this USB with his so called "Mainframe Fix" on it.
-The last time he handed me one of these he left extremely illegal pornography
-that really made me question his functioning capacity as a human being. He
-told me to plug this into the mainframe and log on. Of course he didn't give
+The last time he handed me one of these he left extremely illegal pornography 
+on it that really made me question his functioning capacity as a human being. 
+He told me to plug this into the mainframe and log on. Of course he didn't give
 me the login details so I'll have to go find out some. I'm sure it would have
 made my life a lot easier if he gave me details but I assume he wants me to
 use someone else's account so the blame goes on them if it screws up. Pretty
@@ -36,7 +36,7 @@ the lock and changed the mainframe entries. Such a dick. Come to think of
 it now it is pretty funny. Maybe I should get him to do it on Bob."""
 }
 
-item_login_details = {
+item_login = {
     "id": "login",
 
     "name": "login details",
@@ -173,8 +173,8 @@ item_gun = {
 
 
     "description": 
-    """This was found hidden in the meeting room. Considering there are no agents in the field currently ,no one should have access to a gun at all. 
-Perhaps I should dust it for prints or whatever forensic people do. """
+    """My silenced pistol. Found tucked away in the generator room. I have to find
+out who's been using it. My gun can't cheat on me it's mine and mine alone."""
 
 }
 
@@ -206,5 +206,16 @@ item_recorder = {
     """This isn't Samanthas so this was obviously put in Samantha's room to eavesdrop on her conversations. I wouldn't be suprised if it was one of us who put it there because she makes shady deals with other organisations that really 
 screw us over. Though this might be linked to the camera and about gathering important information. Wouldn't that be embarrassing... 
 If the professional spies were being spied on. I should probably alert Debra about a possible double agent"""
+}
 
+item_tech = {
+    "id": "tech",
+
+    "name": "Unknown Tech",
+
+    "mass": 1.5,
+
+    "description": 
+    """This intersting thingy is just blinking constantly. I hope it's a bomb. That will put me out my mysery. I should
+probably give this to Stephen or show Debra."""
 }
