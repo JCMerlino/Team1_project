@@ -128,7 +128,7 @@ room_toilet = {
     "description":
     """ words""",
 
-    "exits": { "east": "Office Cyril"},
+    "exits": {"east": "Office Cyril"},
 
     "items": []
 }
@@ -201,23 +201,23 @@ room_vault = {
 
 
 rooms = {
-    "Stairs1": room_stairs1,  #first floor
+    "Stairs1": room_stairs1,  # first floor
     "Mallory": room_mallory,
     "Reception": room_reception,
     "Armoury": room_armoury,
-    "Stairs2": room_stairs2,  #ground floor
-    "Office Pam": room_office_pam,  #pam's desk
-    "Office Cyril": room_office_cyril,  #cryril's desk
+    "Stairs2": room_stairs2,  # ground floor
+    "Office Pam": room_office_pam,  # pam's desk
+    "Office Cyril": room_office_cyril,  # cryril's desk
     "Break": room_break,
     "Meeting": room_meeting,
     "Science": room_science,
     "Storage": room_storage,
     "Toilet": room_toilet,
-    "Stairs3": room_stairs3,  #basement
+    "Stairs3": room_stairs3,  # basement
     "Hallway east": room_hallway_east,
     "Hallway west": room_hallway_west,
     "Generator": room_generator,
-    "Computer": room_computer,  #computer mainframe
+    "Computer": room_computer,  # computer mainframe
     "Vault": room_vault,
 
 
