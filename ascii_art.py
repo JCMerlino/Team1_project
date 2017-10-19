@@ -1,12 +1,12 @@
 def start_menu():
     print("""
-     _______      ___      .___  ___.  _______    .___________. __  .___________. __       _______ 
+     _______      ___      .___  ___.  _______    .___________. __  .___________. __       _______
     /  _____|    /   \     |   \/   | |   ____|   |           ||  | |           ||  |     |   ____|
-    |  |  __     /  ^  \    |  \  /  | |  |__      `---|  |----`|  | `---|  |----`|  |     |  |__   
-    |  | |_ |   /  /_\  \   |  |\/|  | |   __|         |  |     |  |     |  |     |  |     |   __|  
-    |  |__| |  /  _____  \  |  |  |  | |  |____        |  |     |  |     |  |     |  `----.|  |____ 
+    |  |  __     /  ^  \    |  \  /  | |  |__      `---|  |----`|  | `---|  |----`|  |     |  |__
+    |  | |_ |   /  /_\  \   |  |\/|  | |   __|         |  |     |  |     |  |     |  |     |   __|
+    |  |__| |  /  _____  \  |  |  |  | |  |____        |  |     |  |     |  |     |  `----.|  |____
     \______| /__/     \__\ |__|  |__| |_______|       |__|     |__|     |__|     |_______||_______|
-                                                                                                   
+
                                                                                                    """)
     print("""
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWX0xol:,'..              ..',:lox0XNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -31,11 +31,11 @@ def start_menu():
     o.                           .,'. :XMMMMMMMMMNO;'oOKWMMMMMMMMWk. .,:.                             .o
     ,                            lXo   c0NMMWNKOo;.    .:x0XWWMWXk'   :Xx.                             ;
     .                            cXx.   .,::;,.           ..;::;.    .dWK,                             .
-                                .oKd.                               cXNl                               
-                                 .oX0o,.                         .,xX0:                                
-                                   :ONN0xl;'..           ...',:ld0NKl.                                 
-                                  .,oXMWMMWNXKO:        'kXXNWWMMW0l,...                               
-                              .;oOKNMMMWMMMMMMMXl.     ,OWMMMMMMMMWNNXK0xl,.                           
+                                .oKd.                               cXNl
+                                 .oX0o,.                         .,xX0:
+                                   :ONN0xl;'..           ...',:ld0NKl.
+                                  .,oXMWMMWNXKO:        'kXXNWWMMW0l,...
+                              .;oOKNMMMWMMMMMMMXl.     ,OWMMMMMMMMWNNXK0xl,.
     .                        .l0WMMMMMMMMMMMMMMMMXl.   ,0MMMMMMMMMMMMMMMMMMN0o'                        .
     '                      .cKWMMMMMMMMMMMMMMMMMMMXl.;xKWMWNXXNWWMMMMMMMMMMMMMXo.                      '
     c                     .xNMMMMMMMMMMMMMMMMMMMMMMN0KWWKd:;;;;;cxKWMMMMMMMMMMMW0;                     c
@@ -61,17 +61,18 @@ def start_menu():
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNKOxl:,..            ..,:lxOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """)
     input("Press any key to start:")
-    
+
+
 def coffee_ending():
     print("""
-       ____   U  ___ u  _____   _____ U _____ uU _____ u    
-    U /"___|   \/"_ \/ |" ___| |" ___|\| ___"|/\| ___"|/    
-    \| | u     | | | |U| |_  uU| |_  u |  _|"   |  _|"      
-     | |/__.-,_| |_| |\|  _|/ \|  _|/  | |___   | |___      
-      \____|\_)-\___/  |_|     |_|     |_____|  |_____|     
-     _// \\      \\    )(\\,-  )(\\,-  <<   >>  <<   >>     
-    (__)(__)    (__)  (__)(_/ (__)(_/ (__) (__)(__) (__)    
-    
+       ____   U  ___ u  _____   _____ U _____ uU _____ u
+    U /"___|   \/"_ \/ |" ___| |" ___|\| ___"|/\| ___"|/
+    \| | u     | | | |U| |_  uU| |_  u |  _|"   |  _|"
+     | |/__.-,_| |_| |\|  _|/ \|  _|/  | |___   | |___
+      \____|\_)-\___/  |_|     |_|     |_____|  |_____|
+     _// \\      \\    )(\\,-  )(\\,-  <<   >>  <<   >>
+    (__)(__)    (__)  (__)(_/ (__)(_/ (__) (__)(__) (__)
+
     MMMMMMMMMMMMMMMWd.lXk,oNXOc;OWMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMXl'o0l'oXNO,;OWMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMM0,,KK;'0MWx.lWMMMMMMMMMMMMMMMMMMM
@@ -84,8 +85,8 @@ def coffee_ending():
     MMk. '::::::::::::::::::::::::::::::,. ,o:,'';oOWM
     MMO. oWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0'   'loo;..cK
     MM0' lNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO. .lXMMMWk' ;
-    MMX; ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx. :XMMMMMWx. 
-    MMWo .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc  lWMMMMMMO. 
+    MMX; ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx. :XMMMMMWx.
+    MMWo .kMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc  lWMMMMMMO.
     MMM0' cNMMMMMMMMMMMMMMMMMMMMMMMMMMMk.  ;KMMMMMWd..
     MMMWd..dWMMMMMMMMMMMMMMMMMMMMMMMMM0; .. :0WMWXo. c
     MMMMNl .dNMMMMMMMMMMMMMMMMMMMMMMM0; 'kO;..;c:..'dN
@@ -96,16 +97,17 @@ def coffee_ending():
     MMNkc'..',:cllllllllllllllllllc:;'...;dKWMMMMMMMMM
     MMMMWXkl;..                     .,cxKWMMMMMMMMMMMM
     """)
-    
+
+
 def double_agent_ending():
     print("""
-     _______  _______  _______  __    _  _______    ______   _______  _______  _______  _______  _______  _______  ______  
-    |   _   ||       ||       ||  |  | ||       |  |      | |       ||       ||       ||   _   ||       ||       ||      | 
+     _______  _______  _______  __    _  _______    ______   _______  _______  _______  _______  _______  _______  ______
+    |   _   ||       ||       ||  |  | ||       |  |      | |       ||       ||       ||   _   ||       ||       ||      |
     |  |_|  ||    ___||    ___||   |_| ||_     _|  |  _    ||    ___||    ___||    ___||  |_|  ||_     _||    ___||  _    |
     |       ||   | __ |   |___ |       |  |   |    | | |   ||   |___ |   |___ |   |___ |       |  |   |  |   |___ | | |   |
     |       ||   ||  ||    ___||  _    |  |   |    | |_|   ||    ___||    ___||    ___||       |  |   |  |    ___|| |_|   |
     |   _   ||   |_| ||   |___ | | |   |  |   |    |       ||   |___ |   |    |   |___ |   _   |  |   |  |   |___ |       |
-    |__| |__||_______||_______||_|  |__|  |___|    |______| |_______||___|    |_______||__| |__|  |___|  |_______||______| 
+    |__| |__||_______||_______||_|  |__|  |___|    |______| |_______||___|    |_______||__| |__|  |___|  |_______||______|
     """)
     print("""
     MMMMMMMMMWWMMMMMMMMMMMMMMMMMMMMMMWN0xc,..   .:d0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -158,18 +160,19 @@ def double_agent_ending():
     MMMMMMMMMMMMMMMMMMMWx.                                             .dWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMMMMNl                                               ;XMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """)
-    
+
+
 def fired_ending():
     print("""
-    ____    ____  ______    __    __   __.______       _______     _______  __  .______       _______  _______  
-    \   \  /   / /  __  \  |  |  |  | (_ )   _  \     |   ____|   |   ____||  | |   _  \     |   ____||       \ 
+    ____    ____  ______    __    __   __.______       _______     _______  __  .______       _______  _______
+    \   \  /   / /  __  \  |  |  |  | (_ )   _  \     |   ____|   |   ____||  | |   _  \     |   ____||       \
      \   \/   / |  |  |  | |  |  |  |  |/|  |_)  |    |  |__      |  |__   |  | |  |_)  |    |  |__   |  .--.  |
       \_    _/  |  |  |  | |  |  |  |    |      /     |   __|     |   __|  |  | |      /     |   __|  |  |  |  |
         |  |    |  `--'  | |  `--'  |    |  |\  \----.|  |____    |  |     |  | |  |\  \----.|  |____ |  '--'  |
-        |__|     \______/   \______/     | _| `._____||_______|   |__|     |__| | _| `._____||_______||_______/ 
-                                                                                                                
+        |__|     \______/   \______/     | _| `._____||_______|   |__|     |__| | _| `._____||_______||_______/
+
                                                                                                                 """)
-    
+
     print("""
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNKkdl:,'...           ...,:cok0XWMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMWKkollodxkOKXNNWWMMMMMMMMMMMMWKkl;'.         ...........        ..;lxKNMMMMMMMMMMMMMMMMMMMMMM
@@ -190,11 +193,11 @@ def fired_ending():
     .  .oXXXXXXXXXXXXXXXXXXKKKKK0000Okdl,.   :0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXk.   o
        .xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXKo.  .oKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXKc   ,
     .  .cKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXk'   lKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXd.  .
-    o.  .:OXXXXXXXXK0kkkkOOO0000KKKKKKK0d,   .xXXXXXXXXKKOkxdoolloodxkO0KXXXXXXXXXXXXXXXXXXXXXXXXXXk.   
-    Nl    :0XXXXXXKd.............''',,,.    'dKXXX0koc:;'..          ...,cok0XXXXXXXXXXXXXXXXXXXXXXO'   
-    Nc   .dKXXXXXXKd,....                 .cOXKOo:..                       ..:oOKXXXXXXXXXXXXXXXXXXO,   
-    O.  .lKXXXXXXXXX0OOkkkxxxddooollc:'    :kd;.            .........          .;d0XXXXXXXXXXXXXXXXk'   
-    k.  .oXXXXXXXXXXXXXXXXXXXXXXXXXXXX0l.   .        ..':ldkO000000Okdo:,.        'o0XXXXXXXXXXXXXXx.   
+    o.  .:OXXXXXXXXK0kkkkOOO0000KKKKKKK0d,   .xXXXXXXXXKKOkxdoolloodxkO0KXXXXXXXXXXXXXXXXXXXXXXXXXXk.
+    Nl    :0XXXXXXKd.............''',,,.    'dKXXX0koc:;'..          ...,cok0XXXXXXXXXXXXXXXXXXXXXXO'
+    Nc   .dKXXXXXXKd,....                 .cOXKOo:..                       ..:oOKXXXXXXXXXXXXXXXXXXO,
+    O.  .lKXXXXXXXXX0OOkkkxxxddooollc:'    :kd;.            .........          .;d0XXXXXXXXXXXXXXXXk'
+    k.  .oXXXXXXXXXXXXXXXXXXXXXXXXXXXX0l.   .        ..':ldkO000000Okdo:,.        'o0XXXXXXXXXXXXXXx.
     K;   ;OXXXXXXXXXXXXXXXXXXXXXXXXXXXX0;         .:dO0KXXXXXXXXXXXXXXXXKOd:.       ,dKXXXXXXXXXXXKl.  .
     Wk.   'ok00KKKKKXXXXXXXXXXXXXXXXXXKd.       ,oOXXXXXXXXXXXXXXXXXXXXXXXXXOo,      .cOXXXXXXXXXXO,   :
     MWO:.   ...''',,,;;;:::ccccllloooc,.      'o0XXXXXXXXXXXXXXXXXXXXXXXXXXXXX0d'      ,kXXXXXXXXKo.  .k
@@ -220,7 +223,8 @@ def fired_ending():
     MMMMMMMMMMMMMMMMMXd'       .:OWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMMMWKl'   .;kNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """)
-    
+
+
 def camera_recorder():
     print("""
                                                     MMMMMMMMMWNXKKKXNWMMMMMMM
@@ -258,8 +262,9 @@ def camera_recorder():
            MMMNx;.....................'.....,cx0NMMMMWWWNXXXXXXNNNNXXNNNNNNNNNNNXXXXXXXXXXXXNNXXXNWMMMMM
              MMWNKOkxxdolcc:;,''......''';lkKWMMMMMMM
               MMMMMMMMMMMMWWNNXK0OkkxxkOKNWMMMMMMM
-    
+
     """)
+
 
 def envelope_note():
     print("""
@@ -307,9 +312,10 @@ def envelope_note():
     cO00Odc::ok0KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK0ko:;cdOO0Oc
     ckxl::lx00K000000000000000000000000000000000000000000000000000000000000000000000000K00K000K0xl;;cdkc
     ',;:okOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOko:,,.
-     .';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'  
+     .';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'
      """)
-    
+
+
 def gun():
     print("""
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWMMMMMMMMMMM
@@ -351,7 +357,8 @@ def gun():
     MWKOkkkxkkkOOO000KKKXXNNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """)
-    
+
+
 def memory_stick():
     print("""
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNOdc,'............,;cdOXWMMMMMMM
@@ -360,13 +367,13 @@ def memory_stick():
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkl,...,:llllllllllllllllllllllllllc;..'dN
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKx:'..';cllllllllllllllllllllllllllllllll;..c
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNOo;...,:cllllllllllllllllllllllllllllllllllll:..
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc;'..';cllllllllllllllllllllllllllllllllllllllllc. 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0d:...',:clllllllllllllllllllllllllllllllllllllllllloo' 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkl,...,cllllllllllllllllllllllllllllllllllllllllllllooodl. 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKx:'..';clllllllllllllllllllllllllllllllllllllllllllloooooolc. 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOo;...,:lllllllllllllllllllllllllllllllllllllllllllllooooolllllc. 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc'..';cllllllllllllllooooollllllllllllllllllllllllloooooollllllllc. 
-    MMMMMMMMMMMMMMMMMMMMMMMMMMN0d:...,:cllllooollllllllok00KKkollllllllllllllllllllloooooolllllllllll:. 
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc;'..';cllllllllllllllllllllllllllllllllllllllllc.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0d:...',:clllllllllllllllllllllllllllllllllllllllllloo'
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkl,...,cllllllllllllllllllllllllllllllllllllllllllllooodl.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKx:'..';clllllllllllllllllllllllllllllllllllllllllllloooooolc.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOo;...,:lllllllllllllllllllllllllllllllllllllllllllllooooolllllc.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc'..';cllllllllllllllooooollllllllllllllllllllllllloooooollllllllc.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMN0d:...,:cllllooollllllllok00KKkollllllllllllllllllllloooooolllllllllll:.
     MMMMMMMMMMMMMMMMMMMMMMWXOl,...,:lllllllx000OdllldxxkOOkOOxlllllllllllllllllloooooollllllllllllll:. :
     MMMMMMMMMMMMMMMMMMMWKxc'..';clllllllodkOOOOOxxxkOOOOOOxdolllllllllllllllloooooolllllllllllllc:,...oX
     MMMMMMMMMMMMMMMMN0o;...,:lllllllllldOOxoooxkkkxddO0KXXX0xollllllllllllooooollllllllllllllc;'..'cxXWM

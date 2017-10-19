@@ -8,7 +8,9 @@ room_stairs1 = {
 
     "exits": {"down": "Stairs2", "west": "Reception"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_reception = {
@@ -19,7 +21,9 @@ room_reception = {
 
     "exits": {"north": "Mallory", "south": "Armoury", "east": "Stairs1"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_mallory = {
@@ -30,7 +34,9 @@ room_mallory = {
 
     "exits": {"south": "Reception"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_armoury = {
@@ -41,7 +47,9 @@ room_armoury = {
 
     "exits": {"north": "Reception"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 
@@ -53,7 +61,9 @@ room_stairs2 = {
 
     "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Pam"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_office_pam = {
@@ -64,7 +74,9 @@ room_office_pam = {
 
     "exits": {"east": "Stairs2", "south": "Science", "north": "Break"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_science = {
@@ -75,7 +87,9 @@ room_science = {
 
     "exits": {"north": "Office Pam", "west": "Storage"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_break = {
@@ -86,7 +100,9 @@ room_break = {
 
     "exits": {"south": "Office Pam", "west": "Meeting"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_meeting = {
@@ -97,7 +113,9 @@ room_meeting = {
 
     "exits": {"east": "Break", "south": "Office Cyril"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_office_cyril = {
@@ -108,7 +126,9 @@ room_office_cyril = {
 
     "exits": {"north": "Meeting", "west": "Toilet", "east": "Office Pam", "south": "Storage"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_storage = {
@@ -119,7 +139,9 @@ room_storage = {
 
     "exits": {"north": "Office Cyril", "east": "Science"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_toilet = {
@@ -130,7 +152,9 @@ room_toilet = {
 
     "exits": {"east": "Office Cyril"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_stairs3 = {
@@ -141,7 +165,9 @@ room_stairs3 = {
 
     "exits": {"up": "Stairs2", "west": "Hallway east"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_hallway_east = {
@@ -152,7 +178,9 @@ room_hallway_east = {
 
     "exits": {"east": "Stairs3", "west": "Hallway west", "north": "Generator"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_generator = {
@@ -163,7 +191,9 @@ room_generator = {
 
     "exits": {"south": "Hallway east"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_computer = {
@@ -174,7 +204,9 @@ room_computer = {
 
     "exits": {"south": "Hallway west"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_hallway_west = {
@@ -185,7 +217,9 @@ room_hallway_west = {
 
     "exits": {"north": "Computer", "east": "Hallway east", "south": "Vault"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 room_vault = {
@@ -196,7 +230,9 @@ room_vault = {
 
     "exits": {"north": "Hallway west"},
 
-    "items": []
+    "items": [],
+
+    "NPCs": []
 }
 
 
