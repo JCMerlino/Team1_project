@@ -30,7 +30,7 @@ Who knows... She's currently pretending to do something on the computer. Probabl
 
     "exits": {"north": "Samantha", "south": "Armoury", "east": "Stairs1"},
 
-    "items": [],
+    "items": [item_usb],
 
     "NPCs": [Jenifer]
 }
