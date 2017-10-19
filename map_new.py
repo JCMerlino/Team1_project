@@ -17,10 +17,33 @@ room_reception = {
     "description":
     """ words""",
 
-    "exits": {"north": "Mallory", "south": "Armory", "east": "Stairs1"},
+    "exits": {"north": "Mallory", "south": "Armoury", "east": "Stairs1"},
 
     "items": []
 }
+
+room_mallory = {
+    "name": "Mallory's Office",
+
+    "description":
+    """ words""",
+
+    "exits": {"south": "Reception"},
+
+    "items": []
+}
+
+room_armoury = {
+    "name": "the Armoury",
+
+    "description":
+    """ words""",
+
+    "exits": {"north": "Reception"},
+
+    "items": []
+}
+
 
 room_stairs2 = {
     "name": "Stairs (Ground Floor)",
@@ -165,14 +188,23 @@ room_hallway_west = {
     "items": []
 }
 
+room_vault = {
+    "name": "the Vault Room",
 
+    "description":
+    """ words""",
+
+    "exits": {"north": "Hallway west"},
+
+    "items": []
+}
 
 
 rooms = {
     "Stairs1": room_stairs1, #first floor
     "Mallory": room_mallory,
     "Reception": room_reception,
-    "Armory": room_armory,
+    "Armoury": room_armoury,
     "Stairs2": room_stairs2, #ground floor
     "Office Pam": room_office_pam, #pam's desk
     "Office Cyril": room_office_cyril, #cryril's desk
