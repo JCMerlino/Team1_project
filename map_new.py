@@ -183,7 +183,7 @@ room_hallway_west = {
     "description":
     """ words""",
 
-    "exits": {"up": "Computer", "east": "Hallway east", "south": "Vault"},
+    "exits": {"north": "Computer", "east": "Hallway east", "south": "Vault"},
 
     "items": []
 }
