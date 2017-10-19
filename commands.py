@@ -74,7 +74,7 @@ class execute:
                     item_id = inventory[pos]
                     found = True
             if found:
-                item_id["picture"]
+                print(item_id["picture"])
                 print(item_id["description"])
             else:
                 print("The object is not in the room")

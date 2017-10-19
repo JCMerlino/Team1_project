@@ -22,7 +22,7 @@ room_reception = {
 
     "exits": {"north": "Samantha", "south": "Armoury", "east": "Stairs1"},
 
-    "items": [],
+    "items": [item_usb],
 
     "NPCs": [Jenifer]
 }

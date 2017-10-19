@@ -1,5 +1,6 @@
+from ascii_art import *
 item_usb = {
-    "id": "USB",
+    "id": "usb",
 
     "name": "Stephen's USB",
 
@@ -13,7 +14,9 @@ told me to plug this into the mainframe and log on. Of course he didn't give
 me the login details so I'll have to go find out some. I'm sure it would have
 made my life a lot easier if he gave me details but I assume he wants me to
 use someone else's account so the blame goes on them if it screws up. Pretty
-smart. I think I'll screw up Bob's account."""
+smart. I think I'll screw up Bob's account.""",
+
+    "picture": memory_stick()
 }
 
 item_mainframe_key = {
