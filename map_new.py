@@ -8,7 +8,7 @@ room_stairs1 = {
     """Stairs that lead from the first floor to the ground floor.""",
 
     "inspection":
-    """We have millions of pounds in funding but we can't afford an elevator. Stairs are physically traumatic and worse these stairs lead to the ground floor offices
+    """We have millions of pounds in funding but we can't afford an elevator. Stairs are physically traumatic and worse, these stairs lead to the ground floor offices
 where all the underlings scurry about.""",
 
     "exits": {"down": "Stairs2", "west": "Reception"},
@@ -42,7 +42,7 @@ room_samantha = {
     """The Boss' office is large and filed with custom made furniture and has expensive carpet. The first floor windows provide natural lighting and a view over the street below. Samantha is sitting at her desk.""",
 
     "inspection":
-    """Samantha's Office... The place where paychecks are crushed and lives are disregarded. Her large desk is shadowed only by her larger bookcase, probably compensating for her social statues. 
+    """Samantha's Office... The place where paychecks are crushed and lives are disregarded. Her large desk is shadowed only by her larger bookcase, probably compensating for her failing secret service. 
 The computer is heavily used as shown by her sixth replacement keyboard this week and the secret alcohol stash is always hidden under her desk but it's not exactly a secret though. 
 Her window has the lamest view of city life possible. Who actually wants to look outside and see depressed city workers going about their daily buisiness? 
 Two chairs are always facing her desk. One for the person she's fireing and one for the person she's hiring to take their place. Of course they both sit there at the same time and it's supposed to strike fear into 
@@ -60,7 +60,12 @@ room_armoury = {
     "name": "the Armoury",
 
     "description":
-    """The Armoury is where all registered weapons are stored. Only field agents are cleared to enter and each agent is assigned a unique code to enter the armoury. """,
+    """The Armoury is where all registered weapons are stored. Only field agents are cleared to enter and each agent is assigned a unique code to enter the armoury.""",
+
+    "inspection":
+    """This is where the big boy toys are kept. On more than one occasion the beauties from this place have gotten me out of some sticky situations. We got assault rifles, submachine guns, shotguns, grenades 
+and all kinds of stuff here. My personal favourite is the silenced pistol because it makes the cool psst sound when you shoot it. Speaking of which... I can't find it. Its missing from the rack but no one has logged it out...
+WHO'S TAKEN MY GUN? I used that to shoot enough loads into people that I can somewhat unofficially claim it as my own.""",
 
     "exits": {"north": "Reception"},
 
@@ -74,7 +79,11 @@ room_stairs2 = {
     "name": "Stairs (Ground Floor)",
 
     "description":
-    """ words""",
+    """Stairs that lead from the ground floor to the first floor and basement.""",
+
+    "inspection":
+    """Whilst I hate stairs I can say that out of all of them these stairs are the worst. If you're going up you're either getting fired or getting shot at and if you're going down its because someone cough* Stephen cough* sent you 
+down their against your own will because he's too lazy to do errands himself. Either way you only use these stairs if someone else wants you to.""",
 
     "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Debra"},
 
@@ -87,7 +96,11 @@ room_office_debra = {
     "name": "Office (Debra's desk)",
 
     "description":
-    """ words""",
+    """The ground floor office that connects used rooms to the floor. The break room and science labs are connected to this part of the office.""",
+
+    "inspection":
+    """Debra's desk is here but of course she isn't. No body does any work here but me I swear. Her desk is a tip. Crips wrappers everywhere. Coffee cups overflowing from her rubbish bin. She has no sense of organisation. 
+Her computer cables are everywhere. Wires are all over her floor and around her desk. Someone could easily trip over her power lead or any of the cables attached to her computer. It's a safety complaint waiting to happen.""",
 
     "exits": {"east": "Stairs2", "south": "Science", "north": "Break"},
 
