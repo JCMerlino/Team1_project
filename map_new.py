@@ -1,4 +1,5 @@
 from items import *
+from characters import *
 
 room_stairs1 = {
     "name": "Stairs (First Floor)",
@@ -19,15 +20,15 @@ room_reception = {
     "description":
     """ words""",
 
-    "exits": {"north": "Mallory", "south": "Armoury", "east": "Stairs1"},
+    "exits": {"north": "Samantha", "south": "Armoury", "east": "Stairs1"},
 
     "items": [],
 
-    "NPCs": []
+    "NPCs": [Jenifer]
 }
 
-room_mallory = {
-    "name": "Mallory's Office",
+room_samantha = {
+    "name": "Samantha's Office",
 
     "description":
     """ words""",
@@ -36,7 +37,7 @@ room_mallory = {
 
     "items": [],
 
-    "NPCs": []
+    "NPCs": [Samantha]
 }
 
 room_armoury = {
@@ -59,15 +60,15 @@ room_stairs2 = {
     "description":
     """ words""",
 
-    "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Pam"},
+    "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Debra"},
 
     "items": [],
 
     "NPCs": []
 }
 
-room_office_pam = {
-    "name": "Office (Pam's desk)",
+room_office_debra = {
+    "name": "Office (Debra's desk)",
 
     "description":
     """ words""",
@@ -85,11 +86,11 @@ room_science = {
     "description":
     """ words""",
 
-    "exits": {"north": "Office Pam", "west": "Storage"},
+    "exits": {"north": "Office Debra", "west": "Storage"},
 
     "items": [],
 
-    "NPCs": []
+    "NPCs": [Stephen]
 }
 
 room_break = {
@@ -98,11 +99,11 @@ room_break = {
     "description":
     """ words""",
 
-    "exits": {"south": "Office Pam", "west": "Meeting"},
+    "exits": {"south": "Office Debra", "west": "Meeting"},
 
     "items": [],
 
-    "NPCs": []
+    "NPCs": [Debra]
 }
 
 room_meeting = {
@@ -111,20 +112,20 @@ room_meeting = {
     "description":
     """ words""",
 
-    "exits": {"east": "Break", "south": "Office Cyril"},
+    "exits": {"east": "Break", "south": "Office Bob"},
 
     "items": [],
 
-    "NPCs": []
+    "NPCs": [Bob, Alexa]
 }
 
-room_office_cyril = {
-    "name": "Office (Cyril's desk)",
+room_office_bob = {
+    "name": "Office (Bob's desk)",
 
     "description":
     """ words""",
 
-    "exits": {"north": "Meeting", "west": "Toilet", "east": "Office Pam", "south": "Storage"},
+    "exits": {"north": "Meeting", "west": "Toilet", "east": "Office Debra", "south": "Storage"},
 
     "items": [],
 
@@ -137,7 +138,7 @@ room_storage = {
     "description":
     """ words""",
 
-    "exits": {"north": "Office Cyril", "east": "Science"},
+    "exits": {"north": "Office Bob", "east": "Science"},
 
     "items": [],
 
@@ -150,7 +151,7 @@ room_toilet = {
     "description":
     """ words""",
 
-    "exits": {"east": "Office Cyril"},
+    "exits": {"east": "Office Bob"},
 
     "items": [],
 
@@ -238,12 +239,12 @@ room_vault = {
 
 rooms = {
     "Stairs1": room_stairs1,  # first floor
-    "Mallory": room_mallory,
+    "Samantha": room_samantha,
     "Reception": room_reception,
     "Armoury": room_armoury,
     "Stairs2": room_stairs2,  # ground floor
-    "Office Pam": room_office_pam,  # pam's desk
-    "Office Cyril": room_office_cyril,  # cryril's desk
+    "Office Debra": room_office_debra,  # debra's desk
+    "Office Bob": room_office_bob,  # bob's desk
     "Break": room_break,
     "Meeting": room_meeting,
     "Science": room_science,
