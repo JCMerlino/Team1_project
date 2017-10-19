@@ -1,5 +1,5 @@
 from game import *
-from map import rooms
+from map_new import rooms
 
 
 class execute:
