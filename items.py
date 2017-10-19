@@ -107,7 +107,7 @@ item_power_lead = {
     "mass": 0.8,
 
     "description": 
-    """You'd think that the science lab would have these just lying about but apparently not. I think Krieger is just being lazy and making me do his errands.
+    """You'd think that the science lab would have these just lying about but apparently not. I think Stephen is just being lazy and making me do his errands.
 The computer I took this from did say "DO NOT POWER OFF" but I think it was being melodramatic. I'm pretty sure things will be fine."""
 }
 
@@ -142,7 +142,7 @@ item_gun = {
     "mass": 1.5,
 
     "description": 
-    """This was found hidden in the meeting room. Considering there are no agents in the field currently and that no one should have access to a gun at all. 
+    """This was found hidden in the meeting room. Considering there are no agents in the field currently ,no one should have access to a gun at all. 
 Perhaps I should dust it for prints or whatever forensic people do. """
 }
 
@@ -167,6 +167,7 @@ item_recorder = {
     "mass": 0.5,
 
     "description": 
-    """This was obviously put in Samantha's room to eavesdrop on her conversations. I wouldn't be suprised if it was one of us who put it there because she makes shady deals with other organisations that really screw us over. 
-Though this might be linked to the camera and about gathering important information. Wouldn't that be embarrassing... If the professional spies were being spied on. I should probably alert Debra about a possible double agent"""
+    """This isn't Samanthas so this was obviously put in Samantha's room to eavesdrop on her conversations. I wouldn't be suprised if it was one of us who put it there because she makes shady deals with other organisations that really 
+screw us over. Though this might be linked to the camera and about gathering important information. Wouldn't that be embarrassing... 
+If the professional spies were being spied on. I should probably alert Debra about a possible double agent"""
 }

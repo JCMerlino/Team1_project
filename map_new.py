@@ -5,7 +5,11 @@ room_stairs1 = {
     "name": "Stairs (First Floor)",
 
     "description":
-    """ words""",
+    """Stairs that lead from the first floor to the ground floor.""",
+
+    "inspection":
+    """We have millions of pounds in funding but we can't afford an elevator. Stairs are physically traumatic and worse these stairs lead to the ground floor offices
+where all the underlings scurry about.""",
 
     "exits": {"down": "Stairs2", "west": "Reception"},
 
@@ -18,7 +22,11 @@ room_reception = {
     "name": "Reception",
 
     "description":
-    """ words""",
+    """Jenifer's office outside outside of Samantha's Office. Jenifer is sitting at her desk.""",
+
+    "inspection":
+    """Jenifer's office? I didn't think she got paid enough to earn herself an office. She has a lousy desk and a lousy computer. Not that she even uses them. She's also put her makeup everywhere. Does she actually work? 
+Who knows... She's currently pretending to do something on the computer. Probably playing some stupid game to pass the time. What else is here... waste bin, fan, potted plant, window... yeah nothing else of importance.""",
 
     "exits": {"north": "Samantha", "south": "Armoury", "east": "Stairs1"},
 
@@ -31,11 +39,19 @@ room_samantha = {
     "name": "Samantha's Office",
 
     "description":
-    """ words""",
+    """The Boss' office is large and filed with custom made furniture and has expensive carpet. The first floor windows provide natural lighting and a view over the street below. Samantha is sitting at her desk.""",
+
+    "inspection":
+    """Samantha's Office... The place where paychecks are crushed and lives are disregarded. Her large desk is shadowed only by her larger bookcase, probably compensating for her social statues. 
+The computer is heavily used as shown by her sixth replacement keyboard this week and the secret alcohol stash is always hidden under her desk but it's not exactly a secret though. 
+Her window has the lamest view of city life possible. Who actually wants to look outside and see depressed city workers going about their daily buisiness? 
+Two chairs are always facing her desk. One for the person she's fireing and one for the person she's hiring to take their place. Of course they both sit there at the same time and it's supposed to strike fear into 
+the new employees soul or somrthing. Her desk is cluttered with "important" uninportant things such as her mini big ben and electronic pencil sharpener. I think I see a small microphone on her desk. 
+I wonder if that is for Samantha to record the wails of her employees as she fires them.""",
 
     "exits": {"south": "Reception"},
 
-    "items": [],
+    "items": [item_recorder],
 
     "NPCs": [Samantha]
 }
@@ -44,7 +60,7 @@ room_armoury = {
     "name": "the Armoury",
 
     "description":
-    """ words""",
+    """The Armoury is where all registered weapons are stored. Only field agents are cleared to enter and each agent is assigned a unique code to enter the armoury. """,
 
     "exits": {"north": "Reception"},
 
