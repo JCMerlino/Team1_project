@@ -27,6 +27,9 @@ def list_of_items(items):
     """
     return ", ".join(item["name"] for item in items)
 
+def list_of_characters(npcs):
+    return ", ".join(npc["name"] for npc in npcs)
+
 
 def print_room_items(room):
     """This function takes a room as an input and nicely displays a list of items
@@ -54,6 +57,10 @@ def print_room_items(room):
         print("There is {0} here.".format(list_of_items(room["items"])))
         print()
 
+def print_room_characters(room):
+    if len(room["NPCs"]) != 0:
+        print("You see {0} here".format(list_of_characters(room["NPCs"])))
+        print()
 
 def print_inventory_items(items):
     """This function takes a list of inventory items and displays it nicely, in a
@@ -122,6 +129,7 @@ def print_room(room):
     print(room["description"])
     print()
     print_room_items(room)
+    print_room_characters(room)
 
 
 def exit_leads_to(exits, direction):
@@ -155,7 +163,7 @@ def print_exit(direction, leads_to):
     print("GO " + direction.upper() + " to " + leads_to + ".")
 
 
-def print_menu(exits, room_items, inv_items):
+def print_menu(exits, room_items, inv_items, room_characters):
     """This function displays the menu of available actions to the player. The
     argument exits is a dictionary of exits as exemplified in map.py. The
     arguments room_items and inv_items are the items lying around in the room
@@ -199,6 +207,10 @@ def print_menu(exits, room_items, inv_items):
         print("DROP {0} to drop {1}.".format(item["id"].upper(), item["name"]))
         print("INSPECT {0} to inspect {1}.".format(item["id"].upper(), item["name"]))
     print("INSPECT ROOM")
+    
+    for character in room_characters:
+        print("INSPECT {0} to inspect {1}".format(character["name"].upper(), character["name"]))
+        print("TALK {0} to talk to {1}".format(character["name"].upper(), character["name"]))
 
     print("What do you want to do?")
 
@@ -272,7 +284,7 @@ def execute_command(command):
         print("This makes no sense.")
 
 
-def menu(exits, room_items, inv_items):
+def menu(exits, room_items, inv_items, room_characters):
     """This function, given a dictionary of possible exits from a room, and a list
     of items found in the room and carried by the player, prints the menu of
     actions using print_menu() function. It then prompts the player to type an
@@ -282,7 +294,7 @@ def menu(exits, room_items, inv_items):
     """
 
     # Display menu
-    print_menu(exits, room_items, inv_items)
+    print_menu(exits, room_items, inv_items, room_characters)
 
     # Read player's input
     user_input = input("> ")
@@ -326,7 +338,7 @@ def main():
         print_inventory_items(inventory)
 
         # Show the menu with possible actions and ask the player
-        command = menu(current_room["exits"], current_room["items"], inventory)
+        command = menu(current_room["exits"], current_room["items"], inventory, current_room["NPCs"])
 
         # Execute the player's command
         execute_command(command)

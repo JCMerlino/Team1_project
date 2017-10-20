@@ -4,7 +4,8 @@ import string
 keywords = ["go", "take", "drop", "east", "west", "south", "north",
             "down", "up", "talk", "inspect", "give", "usb", "room", "recorder",
             "ink", "lead", "mugs", "camera", "plate", "documents", "login",
-            "mainframekey", "vaultkey", "gun", "vaultlog", "vaultpass", "tech"]
+            "mainframekey", "vaultkey", "gun", "vaultlog", "vaultpass", "tech",
+            "samantha", "bruce", "jenifer", "debra", "bob", "stephen", "alexa"]
 
 
 def filter_words(words, keywords):

@@ -76,5 +76,13 @@ class execute:
             if found:
                 print(item_id["picture"])
                 print(item_id["description"])
+                
+            for pos in range(len(current_room["NPCs"])):
+                if inspected_object.capitalize() in current_room["NPCs"][pos]["name"]:
+                    character_id = current_room["NPCs"][pos]
+                    print(character_id["description"])
+                    found = True
+            if found:
+                pass
             else:
                 print("The object is not in the room")
