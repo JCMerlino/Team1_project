@@ -45,8 +45,6 @@ Debra = {
 Bob = {
     "name": "Bob",
 
-    "name": "id card",
-
     "description":
     "Bob is the Document manager",
 
