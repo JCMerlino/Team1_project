@@ -121,7 +121,7 @@ trip over her power lead or any of the cables attached to her computer. It's a s
 Yet she spends most of her time complaining about my unorganised and terrible ways of doing things. Thing is I get 
 things done, even if I may accidently kill a few people here and there whilst doing it.""",
 
-    "exits": {"east": "Stairs2", "south": "Science", "north": "Break"},
+    "exits": {"east": "Stairs2", "south": "Science", "north": "Break", "west": "Office Bob"},
 
     "items": [item_power_lead],
 

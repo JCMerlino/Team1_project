@@ -2,7 +2,9 @@ import string
 
 # List of "unimportant" words (feel free to add more)
 keywords = ["go", "take", "drop", "east", "west", "south", "north",
-            "down", "up", "talk", "inspect", "give", "usb", "room"]
+            "down", "up", "talk", "inspect", "give", "usb", "room", "recorder",
+            "ink", "lead", "mugs", "camera", "plate", "documents", "login",
+            "mainframekey", "vaultkey", "gun", "vaultlog", "vaultpass", "tech"]
 
 
 def filter_words(words, keywords):
