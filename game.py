@@ -211,6 +211,8 @@ def print_menu(exits, room_items, inv_items, room_characters):
     for character in room_characters:
         print("INSPECT {0} to inspect {1}".format(character["name"].upper(), character["name"]))
         print("TALK {0} to talk to {1}".format(character["name"].upper(), character["name"]))
+        for item in inv_items:
+            print("GIVE {0} {1} to give {2} to {3}".format(item["id"].upper(), character["name"].upper(), item["name"], character["name"]))
 
     print("What do you want to do?")
 
@@ -279,6 +281,12 @@ def execute_command(command):
             execute.inspect(command[1], current_room)
         else:
             print("Inspect what?")
+            
+    elif command[0] == "give":
+        if len(command) >= 3:
+            execute.give(command[1], command[2], current_room)
+        else:
+            print("Give what?")
 
     else:
         print("This makes no sense.")
@@ -342,6 +350,11 @@ def main():
 
         # Execute the player's command
         execute_command(command)
+        
+        '''# testing give function
+        for npc in current_room["NPCs"]:
+            print(npc["inventory"])'''
+            
     print("Congratulations! You finished the game!")
 
 

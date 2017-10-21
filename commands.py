@@ -86,3 +86,30 @@ class execute:
                 pass
             else:
                 print("The object is not in the room")
+                
+    def give(target_item, target_npc, current_room):
+        found_npc = False
+        found_item = False
+        pos_item = 0
+        pos_npc = 0
+        while not found_item and pos_item != len(inventory):
+            if inventory[pos_item]["id"] == target_item:
+                found_item = True
+            else:
+                pos_item += 1
+        while not found_npc and pos_npc != len(current_room["NPCs"]):
+            if current_room["NPCs"][pos_npc]["name"] == target_npc.capitalize():
+                found_npc = True
+                npc_inventory = current_room["NPCs"][pos_npc]
+            else:
+                pos_npc += 1
+            
+        if found_item and found_npc:
+            npc_inventory["inventory"].append(inventory.pop(pos_item))
+            print("You gave {0} to {1}".format(target_item, target_npc))
+        elif found_item and not found_npc:
+            print("Give to who?")
+        elif not found_item:
+            print("You do not have this.")
+        else:
+            print("You can not give this.")
