@@ -14,7 +14,11 @@ class execute:
         moving). Otherwise, it prints "You cannot go there."
         """
         if is_valid_exit(current_room["exits"], direction):
-            return rooms[current_room["exits"][direction]]
+            if can_player_go_through_exit(current_room["exits"][direction]):
+                return rooms[current_room["exits"][direction][0]]
+            else:
+                print("You cannot go there at the moment. Please complete your task first.")
+                return current_room
         else:
             print("You cannot go there")
             return current_room
@@ -113,3 +117,18 @@ class execute:
             print("You do not have this.")
         else:
             print("You can not give this.")
+    
+    def talk(target_npc, current_room):
+        found_npc = False
+        pos_npc = 0
+        while not found_npc and pos_npc != len(current_room["NPCs"]):
+            if current_room["NPCs"][pos_npc]["name"] == target_npc.capitalize():
+                found_npc = True
+                
+            else:
+                pos_npc += 1
+        if found_npc:
+            print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
+            story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+        else:
+            print("You cannot talk to this person.")

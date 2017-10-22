@@ -1,5 +1,6 @@
 from items import *
 from characters import *
+from storyline import *
 
 room_stairs1 = {
     "name": "Stairs (First Floor)",
@@ -12,7 +13,7 @@ room_stairs1 = {
 Stairs are physically traumatic and worse, these stairs lead to the ground floor offices
 where all the underlings scurry about.""",
 
-    "exits": {"down": "Stairs2", "west": "Reception"},
+    "exits": {"down": ("Stairs2", None), "west": ("Reception", None)},
 
     "items": [],
 
@@ -31,7 +32,7 @@ virus filled computer. Not that she even uses them. She's also put her makeup ev
 knows... She's currently pretending to do something on the computer. Probably playing some stupid game to pass the 
 time. What else is here... waste bin, fan, ink cartridges, window... yeah nothing else of importance.""",
 
-    "exits": {"north": "Samantha", "south": "Armoury", "east": "Stairs1"},
+    "exits": {"north": ("Samantha", None), "south": ("Armoury", STORY_TALKED_TO_SAMANTHA), "east": ("Stairs1", STORY_TALKED_TO_SAMANTHA)},
 
     "items": [item_ink],
 
@@ -58,7 +59,7 @@ soul or somrthing. Her desk is cluttered with "important" uninportant things suc
 pencil sharpener. I think I see a small microphone on her desk. I wonder if that is for Samantha to record the wails 
 of her employees as she fires them.""",
 
-    "exits": {"south": "Reception"},
+    "exits": {"south": ("Reception", None)},
 
     "items": [item_recorder],
 
@@ -79,7 +80,7 @@ My personal favourite is the suppressed pistol because it makes the cool psst so
 which... I can't find it. Its missing from the rack but no one has logged it out...WHO'S TAKEN MY GUN? I used that to 
 shoot enough loads into people that I can somewhat unofficially claim it as my own.""",
 
-    "exits": {"north": "Reception"},
+    "exits": {"north": ("Reception", None)},
 
     "items": [],
 
@@ -99,7 +100,7 @@ either getting fired or getting shot at and if you're going down its because som
 down their against your own will because he's too lazy to do errands himself. Either way you only use these stairs 
 if someone else wants you to.""",
 
-    "exits": {"up": "Stairs1", "down": "Stairs3", "west": "Office Debra"},
+    "exits": {"up": ("Stairs1", None), "down": ("Stairs3", None), "west": ("Office Debra", None)},
 
     "items": [],
 
@@ -121,7 +122,7 @@ trip over her power lead or any of the cables attached to her computer. It's a s
 Yet she spends most of her time complaining about my unorganised and terrible ways of doing things. Thing is I get 
 things done, even if I may accidently kill a few people here and there whilst doing it.""",
 
-    "exits": {"east": "Stairs2", "south": "Science", "north": "Break", "west": "Office Bob"},
+    "exits": {"east": ("Stairs2", None), "south": ("Science", None), "north": ("Break", None), "west": ("Office Bob", None)},
 
     "items": [item_power_lead],
 
@@ -143,7 +144,7 @@ of time he spends alone, he's probably researching how to create an artificial g
 are so many humanoid creatures floating around in tanks. Come to think of it thats a bit freaky but no one really knows 
 what he gets up to in here. We just assume he'll give us a boring explanation if we ask.""",
 
-    "exits": {"north": "Office Debra", "west": "Storage"},
+    "exits": {"north": ("Office Debra", None), "west": ("Storage", None)},
 
     "items": [],
 
@@ -169,7 +170,7 @@ you'd assume they were a couple. Which apparently they don't mind because: "If t
 other, you're not real BFFs" which I don't understand but hey if they want to keep their relationship a "secret" who am I 
 to judge or say otherwise.""",
 
-    "exits": {"south": "Office Debra", "west": "Meeting"},
+    "exits": {"south": ("Office Debra", None), "west": ("Meeting", None)},
 
     "items": [item_mugs],
 
@@ -191,7 +192,7 @@ This room has always been quite bland and the projector is practically falling a
 years however I don't remember that camera in the corner. I hope it hasnt got anything to do with Bob and Alexa in the room. 
 """,
 
-    "exits": {"east": "Break", "south": "Office Bob"},
+    "exits": {"east": ("Break", None), "south": ("Office Bob", None)},
 
     "items": [item_camera],
 
@@ -213,7 +214,7 @@ of the pile of documents. Wonder what that is for. There's a single scrap piece 
 login details. I'm suprised there isn't any alcohol in sight. This sort of job requires a truck load of motivation so I wonder
 how he unwinds after it all.""",
 
-    "exits": {"north": "Meeting", "west": "Toilet", "east": "Office Debra", "south": "Storage"},
+    "exits": {"north": ("Meeting", None), "west": ("Toilet", None), "east": ("Office Debra", None), "south": ("Storage", None)},
 
     "items": [item_login, item_documents],
 
@@ -234,7 +235,7 @@ does an amazing job of it. With so many items entering and exiting this room per
 The only part that isnt sorted is the miscelaneous technology cabinet. Right now it looks like someone dumped heat plate circuitry
 outside it. Probably because it's full but I won't go find out in case I have to clear it up.""",
 
-    "exits": {"north": "Office Bob", "east": "Science"},
+    "exits": {"north": ("Office Bob", None), "east": ("Science", None)},
 
     "items": [item_heat_plate],
 
@@ -252,7 +253,7 @@ room_toilet = {
 smell it. Nothing else really to say except its a toilet but there is some shiny things at the bottom of the bowl. They look like keys.
 "When you see it, you'll shit keys." Nah scrap that it doesn't have the same tone as "shit bricks".""",
 
-    "exits": {"east": "Office Bob"},
+    "exits": {"east": ("Office Bob", None)},
 
     "items": [item_vault_key,item_mainframe_key],
 
@@ -269,7 +270,7 @@ room_stairs3 = {
     """You'd think that the stairs to hell would be going down, but in this case they lead up. Down here no one can bother you or 
 tell you to work. """,
 
-    "exits": {"up": "Stairs2", "west": "Hallway east"},
+    "exits": {"up": ("Stairs2", None), "west": ("Hallway east", None)},
 
     "items": [],
 
@@ -286,7 +287,7 @@ this part of the hallway""",
     "inspection":
     """Its a hallway. What else did you expect?""",
 
-    "exits": {"east": "Stairs3", "west": "Hallway west", "north": "Generator"},
+    "exits": {"east": ("Stairs3", None), "west": ("Hallway west", None), "north": ("Generator", None)},
 
     "items": [],
 
@@ -305,7 +306,7 @@ for the entire building.""",
 come off the floor. Good times... Wait. My pistol is in the corner of the room. Someone tried to tuck it away behind the generator. How did 
 it get here? """,
 
-    "exits": {"south": "Hallway east"},
+    "exits": {"south": ("Hallway east", None)},
 
     "items": [item_gun],
 
@@ -323,7 +324,7 @@ room_computer = {
 I have to login first though. There is a card here which has the vault passcode on it. Someone left the damm thing lying 
 around. Our security really is questionable. """,
 
-    "exits": {"south": "Hallway west"},
+    "exits": {"south": ("Hallway west", None)},
 
     "items": [item_vault_pass,item_vault_log],
 
@@ -340,7 +341,7 @@ this part of the hallway""",
     "inspection":
     """Its a hallway. What else did you expect?""",
 
-    "exits": {"north": "Computer", "east": "Hallway east", "south": "Vault"},
+    "exits": {"north": ("Computer", item_mainframe_key), "east": ("Hallway east", None), "south": ("Vault", item_vault_key)},
 
     "items": [],
 
@@ -361,7 +362,7 @@ it's blinking so it's either a bomb or a communicator. But why is it here? I sho
 ask Stephen about it but then again Debra might want to know if something fishy is going on. More importantly my secret 
 stash of used panties is still here and it's box looks unopened so I think my secret is safe.""",
 
-    "exits": {"north": "Hallway west"},
+    "exits": {"north": ("Hallway west", None)},
 
     "items": [item_tech],
 

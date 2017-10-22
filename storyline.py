@@ -1,0 +1,1 @@
+STORY_TALKED_TO_SAMANTHA = "talked to Samantha"

@@ -144,7 +144,7 @@ def exit_leads_to(exits, direction):
     >>> exit_leads_to(rooms["Tutor"]["exits"], "west")
     'Reception'
     """
-    return rooms[exits[direction]]["name"]
+    return rooms[exits[direction][0]]["name"]
 
 
 def print_exit(direction, leads_to):
@@ -235,6 +235,15 @@ def is_valid_exit(exits, chosen_exit):
     """
     return chosen_exit in exits
 
+def can_player_go_through_exit(chosen_exit):
+    if chosen_exit[1] == None:
+        return True
+    elif chosen_exit[1] in inventory:
+        return True
+    elif chosen_exit[1] in story_progress:
+        return True
+    else:
+        return False
 
 def check_player_mass(pos, current_room):
     MASS_ALLOWED = 3
@@ -287,6 +296,12 @@ def execute_command(command):
             execute.give(command[1], command[2], current_room)
         else:
             print("Give what?")
+            
+    elif command[0] == "talk":
+        if len(command) > 1:
+            execute.talk(command[1], current_room)
+        else:
+            print("Talk to who?")
 
     else:
         print("This makes no sense.")
@@ -327,7 +342,7 @@ def move(exits, direction):
     """
 
     # Next room to go to
-    return rooms[exits[direction]]
+    return rooms[exits[direction][0]]
 
 
 def end_condition():
