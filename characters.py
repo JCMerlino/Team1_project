@@ -29,7 +29,7 @@ Samantha = {
     result she takes every action with upmost seriousness and is constantly 
     reminding others to do so as well. To her faliure Bruce has never caught on
     even for a second and whilst she is constantly annoyed by his inability to be
-    mature she knows he cannot be replaced and has develop and slight lenience 
+    mature she knows he cannot be replaced and has develop a slight lenience 
     with him though others know not to test her bounds.""",
 
     "inventory": []

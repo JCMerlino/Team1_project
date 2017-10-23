@@ -251,7 +251,7 @@ room_toilet = {
     "inspection":
     """This place is suprisingly clean but I'm pretty sure there has been a lot of quickies that have happened here. You can almost
 smell it. Nothing else really to say except its a toilet but there is some shiny things at the bottom of the bowl. They look like keys.
-"When you see it, you'll shit keys." Nah scrap that it doesn't have the same tone as "shit bricks".""",
+I think someone's diet plan is recommending questionable food choices.""",
 
     "exits": {"east": ("Office Bob", None)},
 
@@ -389,7 +389,4 @@ rooms = {
     "Generator": room_generator,
     "Computer": room_computer,  # computer mainframe
     "Vault": room_vault,
-
-
-
 }
