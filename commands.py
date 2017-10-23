@@ -1,5 +1,6 @@
 from game import *
 from map_new import rooms
+from storyline import *
 
 
 class execute:
@@ -128,7 +129,14 @@ class execute:
             else:
                 pos_npc += 1
         if found_npc:
-            print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
-            story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+            if not stage2:
+                story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+                print("if not stage 2")
+            elif stage3 and (current_room["NPCs"][pos_npc]["name"] == "Stephen"):
+                story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+                print("after stage 3")
+            else:
+                print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
+               
         else:
             print("You cannot talk to this person.")
