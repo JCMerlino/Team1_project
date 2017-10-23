@@ -6,6 +6,7 @@ from items import *
 from gameparser import *
 from commands import *
 from ascii_art import *
+from storyline import *
 
 
 def list_of_items(items):
@@ -207,7 +208,7 @@ def print_menu(exits, room_items, inv_items, room_characters):
         print("DROP {0} to drop {1}.".format(item["id"].upper(), item["name"]))
         print("INSPECT {0} to inspect {1}.".format(item["id"].upper(), item["name"]))
     print("INSPECT ROOM")
-    
+
     for character in room_characters:
         print("INSPECT {0} to inspect {1}".format(character["name"].upper(), character["name"]))
         print("TALK {0} to talk to {1}".format(character["name"].upper(), character["name"]))
@@ -244,6 +245,7 @@ def can_player_go_through_exit(chosen_exit):
         return True
     else:
         return False
+
 
 def check_player_mass(pos, current_room):
     MASS_ALLOWED = 3
@@ -290,13 +292,13 @@ def execute_command(command):
             execute.inspect(command[1], current_room)
         else:
             print("Inspect what?")
-            
+
     elif command[0] == "give":
         if len(command) >= 3:
             execute.give(command[1], command[2], current_room)
         else:
             print("Give what?")
-            
+
     elif command[0] == "talk":
         if len(command) > 1:
             execute.talk(command[1], current_room)
@@ -365,11 +367,9 @@ def main():
 
         # Execute the player's command
         execute_command(command)
-        
-        '''# testing give function
-        for npc in current_room["NPCs"]:
-            print(npc["inventory"])'''
-            
+
+        checkProgress(current_room)
+
     print("Congratulations! You finished the game!")
 
 
