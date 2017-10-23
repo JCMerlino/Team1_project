@@ -27,13 +27,12 @@ item_mainframe_key = {
     "mass": 0.5,
 
     "description":
-    """Well we just won the shitiest security system award of the year.
+    """Well we just won the worst security system award of the year.
 Seriously this is a physical key that unlocks the door to the mainframe.
 I mean, someone would still have to hack the mainframe but man why just a
-single key? Anyone could just pick that lock. Wait... I knew it! I didn't
-search up furry porn when I was blackout drunk it was Stephen who picked
-the lock and changed the mainframe entries. Such a dick. Come to think of
-it now it is pretty funny. Maybe I should get him to do it on Bob.""",
+single key? Anyone could just pick that lock. If someone could hack into 
+the system they could change everyone's search history... I might talk
+to Stephen about changing Bob's history.""",
 
     "picture": key()
 }
@@ -210,8 +209,8 @@ item_camera = {
     "description":
     """They say profesional work conduct is essential for a safe and effective working
 environment but someone obviously put this here to catch people getting a little too
-close to each other. I wonder what sort of creep wants to record their co-workers have
-unprofessional sex. I better find out who put this camera in the meeting room. Actually
+close to each other. I wonder what sort of creep wants to record their co-workers 
+doing the dirty. I better find out who put this camera in the meeting room. Actually
 maybe this camera was used to record important meetings by a mole or something. Either
 way I don't want them finding out what else goes on in the meeting room especially if
 it concerns me.""",
