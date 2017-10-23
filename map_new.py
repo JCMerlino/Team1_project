@@ -364,7 +364,7 @@ stash of used panties is still here and it's box looks unopened so I think my se
 
     "exits": {"north": ("Hallway west", None)},
 
-    "items": [item_tech],
+    "items": [],
 
     "NPCs": []
 }

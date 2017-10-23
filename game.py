@@ -348,7 +348,11 @@ def move(exits, direction):
 
 
 def end_condition():
-    return False
+    if (STORY_COFFEE_MADE in story_progress):
+        coffee_ending()
+        return True
+    else:
+        return False
 
 
 # This is the entry point of our program
