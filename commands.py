@@ -146,7 +146,7 @@ class execute:
             print("You cannot talk to this person.")
 
     def double(target_npc):
-        if not stage_5Agent["Completion"] and STORY_EVIDENCE_FOUND in story_progress:
+        if (STORY_EVIDENCE_FOUND in story_progress) and (current_room["name"] == "the Break Room"):
             if target_npc.capitalize() == "Jenifer":
                 print("Double jenifer")
                 story_progress.append(STORY_CORRECT_AGENT)

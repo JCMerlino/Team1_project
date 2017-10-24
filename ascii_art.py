@@ -1,18 +1,18 @@
 def start_menu():
     print("""
-         _______..______   ____    ____  __     _______.     _______   ______   .__   __.  _______    
-    /       ||   _  \  \   \  /   / (_ )   /       |    /  _____| /  __  \  |  \ |  | |   ____|   
-   |   (----`|  |_)  |  \   \/   /   |/   |   (----`   |  |  __  |  |  |  | |   \|  | |  |__      
-    \   \    |   ___/    \_    _/          \   \       |  | |_ | |  |  |  | |  . `  | |   __|     
-.----)   |   |  |          |  |        .----)   |      |  |__| | |  `--'  | |  |\   | |  |____    
-|_______/    | _|          |__|        |_______/        \______|  \______/  |__| \__| |_______|   
-                                                                                                  
-                     .______        ______     _______  __    __   _______                        
-                     |   _  \      /  __  \   /  _____||  |  |  | |   ____|                       
-                     |  |_)  |    |  |  |  | |  |  __  |  |  |  | |  |__                          
-                     |      /     |  |  |  | |  | |_ | |  |  |  | |   __|                         
-                     |  |\  \----.|  `--'  | |  |__| | |  `--'  | |  |____                        
-                     | _| `._____| \______/   \______|  \______/  |_______|                       
+         _______..______   ____    ____  __     _______.     _______   ______   .__   __.  _______
+    /       ||   _  \  \   \  /   / (_ )   /       |    /  _____| /  __  \  |  \ |  | |   ____|
+   |   (----`|  |_)  |  \   \/   /   |/   |   (----`   |  |  __  |  |  |  | |   \|  | |  |__
+    \   \    |   ___/    \_    _/          \   \       |  | |_ | |  |  |  | |  . `  | |   __|
+.----)   |   |  |          |  |        .----)   |      |  |__| | |  `--'  | |  |\   | |  |____
+|_______/    | _|          |__|        |_______/        \______|  \______/  |__| \__| |_______|
+
+                     .______        ______     _______  __    __   _______
+                     |   _  \      /  __  \   /  _____||  |  |  | |   ____|
+                     |  |_)  |    |  |  |  | |  |  __  |  |  |  | |  |__
+                     |      /     |  |  |  | |  | |_ | |  |  |  | |   __|
+                     |  |\  \----.|  `--'  | |  |__| | |  `--'  | |  |____
+                     | _| `._____| \______/   \______|  \______/  |_______|
                                                                                                  """)
     print("""
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWX0xol:,'..              ..',:lox0XNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -66,7 +66,7 @@ def start_menu():
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNKkoc,..                        .';cox0NWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNKOxl:,..            ..,:lxOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """)
-    input("Press any key to start:")
+    input("Press enter to start:")
 
 
 def coffee_ending():
@@ -369,7 +369,7 @@ def gun():
 
 
 def memory_stick():
-    usb ="""
+    usb = """
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNOdc,'............,;cdOXWMMMMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc'...,;:ccclccccc:;,'....;oONMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0d:...,:clllllllllllllllllll:;'..,dKWM
@@ -408,6 +408,7 @@ def memory_stick():
     """
     return usb
 
+
 def key():
     key = """
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXOdl:;;;;;;;;;;;;;;;:ldOXWMMMMMMMMMMMMMM
@@ -422,10 +423,10 @@ def key():
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.,0WNXkodoodddddddoooddoookXWNNk. .kWWW0;.oNNNNNW0, .k
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWl.lNNN0doddodddddddooddddoodOXNNNk;.'cc:',xXNO0NNNNl  ;
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX:.xWNXOodooddddddddddddddddddx0XNWX0xoodOXNKOdkNNNWx. .
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,.OWXKkoddoddddddddddddddddooodxkO0KXXXKKOkddokXNNWk.  
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,.OWXKkoddoddddddddddddddddddooooddddddddoodookNNNWO.  
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;.kWXKkodooddddddddddddddddddddooodddooddooood0NNNNx.  
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc.dWNXOddoodddddddddddddddddooodddoodoodddddokXNNNXl   
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,.OWXKkoddoddddddddddddddddooodxkO0KXXXKKOkddokXNNWk.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK,.OWXKkoddoddddddddddddddddddooooddddddddoodookNNNWO.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX;.kWXKkodooddddddddddddddddddddooodddooddooood0NNNNx.
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNc.dWNXOddoodddddddddddddddddooodddoodoodddddokXNNNXl
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWd.cNNN0doddodddddddddddddddddddddddoodddooddxKNNNNO'  .
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWW0''OWWKxoodddddddddddddddddddddddddodddoddoxKNNNNXc   l
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNO'.xNXOdodddddddddddddddddddddddddddooddodkXNNNWXl.  '0
@@ -461,6 +462,7 @@ def key():
     MMMWWO'              .lXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """
     return key
+
 
 def ink():
     ink = """
@@ -519,6 +521,7 @@ def ink():
     """
     return ink
 
+
 def mug():
     mug = """
     MMMMMMMMMMMMMMMMWNX0kdoc:,'...                 ......',:coxO0XNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -540,8 +543,8 @@ def mug():
     Mk..;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. cNMMMMMMMMMMMMMMK;.;,. .. '
     MK,.;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;. lWMMMMMMMMMMMMMMNc.,;'.....
     MNc.,:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;..dWMMMMMMMMMMMMMMWo.':;;;,..
-    MWd..:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;..xMMMMMMMMMMMMMMMWo.'::::;. 
-    MMO'.;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::,..kMMMMMMMMMMMMMMMNc.,::::;. 
+    MWd..:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;..xMMMMMMMMMMMMMMMWo.'::::;.
+    MMO'.;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::,..kMMMMMMMMMMMMMMMNc.,::::;.
     MMX;.,::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::, .OMMMMMMMMMMMMMMMK,.;::::, .
     MMWl.'::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::, '0MMMMMMMMMMMMMMWx..;::::. '
     MMMk..;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::' ,KMMMMMMMMMMMMMMK;.,::::;. l
@@ -569,6 +572,7 @@ def mug():
     MMMMMMMMMMMMMMMMMMMMMMMWX0xl:,...       ....',coxOKXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """
     return mug
+
 
 def power_lead():
     lead = """
@@ -620,6 +624,7 @@ def power_lead():
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     """
     return lead
+
 
 def plate():
     plate = """
@@ -676,6 +681,7 @@ def plate():
     """
     return plate
 
+
 def documents():
     document = """
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMWWNkc;;::::cloxk0KNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -710,6 +716,7 @@ def documents():
     """
     return document
 
+
 def tech():
     tech = """
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK:....,lkKNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -723,8 +730,8 @@ def tech():
     MMMMMMMMMMMMMMMMMMMMMMMMMWk;'ckOOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdl:;''',:ldkO0KKKK00kxocc:cloxOXNMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMXo';dO0Okkkkkkkkkdodxxkkkkkkkkkxxdddddddkkkxdoc;,''';:ldk00KKKK00kdocc:cloxK
     MMMMMMMMMMMMMMMMMMMMMMWO;':oOK00OOOkkkxolodxkOOOOOOOOOkkkkxddol::cdkkkkkkxdl:,'.'';coxO0KKKKK0Okdc,;
-    MMMMMMMMMMMMMMMMMMMMMXd',dOdlc:cdOOkdc:lxOO0000K000000OOkkkkxddoc;,:dkkkkkkkkkxdoc;'..',;oOKKKKKOo' 
-    MMMMMMMMMMMMMMMMMMMW0:'ckXNNXO;.lOxc';dOO0KKKKKKKKKKKKK0OOkkxddddo:''oOOkkkkkkkkkkkkxo;..cOKKKKOl.  
+    MMMMMMMMMMMMMMMMMMMMMXd',dOdlc:cdOOkdc:lxOO0000K000000OOkkkkxddoc;,:dkkkkkkkkkxdoc;'..',;oOKKKKKOo'
+    MMMMMMMMMMMMMMMMMMMW0:'ckXNNXO;.lOxc';dOO0KKKKKKKKKKKKK0OOkkxddddo:''oOOkkkkkkkkkkkkxo;..cOKKKKOl.
     MMMMMMMMMMMMMMMMMMNd',o0XNNNNk:oOx;.,dO00KKXXXKKKKKKKKKK0Okkkxdddolc.'x0OkkkkkkkkOOkd;..lOKKK0k:. ..
     MMMMMMMMMMMMMMMMMKc.:xKNNNNNKc:kkl..lkO0KKXNNNNXKKKKKKKK00Okkxddddol;.:00kkkkkkkO0d;. .o0KKK0d, .::.
     MMMMMMMMMMMMMMMWx,'lOKNNNNNNk,lOk; ,dO0KKXNNNNXKKKKKKKKK00Okkkxdddol;.,00Okkkkk0Oo.  .o0KKKOo. .c:.:

@@ -77,7 +77,7 @@ def print_inventory_items(items):
 
     """
     if inventory == []:
-        print("You have nothin in your inventor.\n")
+        print("You have nothing in your inventory.\n")
     else:
         print("You have {0}.\n".format(list_of_items(inventory)))
 

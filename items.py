@@ -1,4 +1,4 @@
-from ascii_art import * 
+from ascii_art import *
 item_usb = {
     "id": "usb",
 
@@ -8,8 +8,8 @@ item_usb = {
 
     "description":
     """Stephen gave me this USB with his so called "Mainframe Fix" on it.
-The last time he handed me one of these he left extremely illegal pornography 
-on it that really made me question his functioning capacity as a human being. 
+The last time he handed me one of these he left extremely illegal pornography
+on it that really made me question his functioning capacity as a human being.
 He told me to plug this into the mainframe and log on. Of course he didn't give
 me the login details so I'll have to go find out some. I'm sure it would have
 made my life a lot easier if he gave me details but I assume he wants me to
@@ -30,7 +30,7 @@ item_mainframe_key = {
     """Well we just won the worst security system award of the year.
 Seriously this is a physical key that unlocks the door to the mainframe.
 I mean, someone would still have to hack the mainframe but man why just a
-single key? Anyone could just pick that lock. If someone could hack into 
+single key? Anyone could just pick that lock. If someone could hack into
 the system they could change everyone's search history... I might talk
 to Stephen about changing Bob's history.""",
 
@@ -143,7 +143,7 @@ item_power_lead = {
 
     "mass": 0.8,
 
-    "description": 
+    "description":
     """You'd think that the science lab would have these just lying about but apparently not. I think Stephen is just being lazy and making me do his errands.
 The computer I took this from did say "DO NOT POWER OFF" but I think it was being melodramatic. I'm pretty sure things will be fine.""",
 
@@ -191,7 +191,7 @@ item_gun = {
     "mass": 1.5,
 
 
-    "description": 
+    "description":
     """My silenced pistol. Found tucked away in the generator room. I have to find
 out who's been using it. My gun can't cheat on me it's mine and mine alone.""",
 
@@ -209,7 +209,7 @@ item_camera = {
     "description":
     """They say profesional work conduct is essential for a safe and effective working
 environment but someone obviously put this here to catch people getting a little too
-close to each other. I wonder what sort of creep wants to record their co-workers 
+close to each other. I wonder what sort of creep wants to record their co-workers
 doing the dirty. I better find out who put this camera in the meeting room. Actually
 maybe this camera was used to record important meetings by a mole or something. Either
 way I don't want them finding out what else goes on in the meeting room especially if
@@ -225,10 +225,13 @@ item_recorder = {
 
     "mass": 0.5,
 
-    "description": 
-    """This isn't Samanthas so this was obviously put in Samantha's room to eavesdrop on her conversations. I wouldn't be suprised if it was one of us who put it there because she makes shady deals with other organisations that really 
-screw us over. Though this might be linked to the camera and about gathering important information. Wouldn't that be embarrassing... 
-If the professional spies were being spied on. I should probably alert Debra about a possible double agent""",
+    "description":
+    """This isn't Samanthas so this was obviously put in Samantha's room to eavesdrop
+on her conversations. I wouldn't be suprised if it was one of us who put it there
+because she makes shady deals with other organisations that really screw us over.
+Though this might be linked to the camera and about gathering important information.
+Wouldn't that be embarrassing... If the professional spies were being spied on. I
+should probably alert Debra about a possible double agent""",
 
     "picture": camera_recorder()
 }
@@ -240,7 +243,7 @@ item_tech = {
 
     "mass": 1.5,
 
-    "description": 
+    "description":
     """This intersting thingy is just blinking constantly. I hope it's a bomb. That will put me out my mysery. I should
 probably give this to Stephen or show Debra.""",
 

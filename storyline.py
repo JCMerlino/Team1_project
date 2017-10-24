@@ -92,14 +92,14 @@ def checkProgress(current_room):
                 story_progress.append(STORY_COFFEE_MADE)
                 stage_5Coffee["Completion"] = True
     elif (STORY_DOUBLE_STARTED in story_progress):
-        if not stage_4Agent:
+        if not stage_4Agent["Completion"]:
             if (item_camera in Debra["inventory"]) and (item_recorder in Debra["inventory"]) and (item_gun in Debra["inventory"]):
                 story_progress.append(STORY_EVIDENCE_FOUND)
                 stage_4Agent["Completion"] = True
                 Debra["inventory"].remove(item_gun)
                 inventory.append(item_gun)
                 print("Evidence given")
-        elif not stage_5Agent and STORY_EVIDENCE_FOUND in story_progress:
+        elif not stage_5Agent["Completion"] and STORY_EVIDENCE_FOUND in story_progress:
             if current_room["name"] == "Computer Mainframe" and item_gun in inventory:
                 print("Running fingerprints...")
                 time.sleep(2)
@@ -108,19 +108,30 @@ def checkProgress(current_room):
             elif current_room["name"] == "the Break Room":
                 if STORY_CORRECT_AGENT in story_progress:
                     stage_5Agent["Completion"] = True
+                    choice = ""
+                    while choice != "chest" and choice != "leg":
+                        shoot = input("Shoot Jenifer in the CHEST or LEG: ")
+                        choice = normalise_input(shoot)
+
+                    if choice == "chest":
+                        #run dialog stage 7
+                        story_progress.append(STORY_CHEST_SHOT)
+                    elif choice == "leg":
+                        #run dialog stage 8
+                        story_progress.append(STORY_LEG_SHOT)
                 elif STORY_INCORRECT_AGENT in story_progress:
                     stage5_Agent["Completion"] = True
                     #run dialogue for stage 9
-        elif not stage_6Agent and STORY_CORRECT_AGENT in story_progress:
-            #run dialog stage 6
-            choice = ""
-            while choice != "chest" or choice != "leg":
-                shoot = input("Shoot Jenifer in the CHEST or LEG)")
-                choice = normalise_input(shoot)
+        #elif not stage_6Agent["Completion"] and STORY_CORRECT_AGENT in story_progress:
+            ##run dialog stage 6
+            #choice = ""
+            #while choice != "chest" and choice != "leg":
+                #shoot = input("Shoot Jenifer in the CHEST or LEG: ")
+                #choice = normalise_input(shoot)
 
-            if choice == "chest":
-                #run dialog stage 7
-                story_progress.append(STORY_CHEST_SHOT)
-            elif choice == "leg":
-                #run dialog stage 8
-                story_progress.append(STORY_LEG_SHOT)
+            #if choice == "chest":
+                ##run dialog stage 7
+                #story_progress.append(STORY_CHEST_SHOT)
+            #elif choice == "leg":
+                ##run dialog stage 8
+                #story_progress.append(STORY_LEG_SHOT)
