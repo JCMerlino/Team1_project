@@ -170,7 +170,7 @@ def print_exit(direction, leads_to):
     print("GO " + direction.upper() + " to " + leads_to + ".")
 
 
-def print_menu(exits, room_items, inv_items, room_characters):
+def print_menu(exits, room_items, inv_items, room_characters, current_room):
     """This function displays the menu of available actions to the player. The
     argument exits is a dictionary of exits as exemplified in map.py. The
     arguments room_items and inv_items are the items lying around in the room
@@ -221,7 +221,7 @@ def print_menu(exits, room_items, inv_items, room_characters):
         for item in inv_items:
             print("GIVE {0} {1} to give {2} to {3}".format(item["id"].upper(), character["name"].upper(), item["name"], character["name"]))
 
-    if not stage_5Agent["Completion"] and STORY_EVIDENCE_FOUND in story_progress:
+    if (STORY_EVIDENCE_FOUND in story_progress) and (current_room["name"] == "the Break Room"):
         print("DOUBLE <insert name> to select double agent.")
 
     print("What do you want to do?")
@@ -325,7 +325,7 @@ def execute_command(command):
         print("This makes no sense.")
 
 
-def menu(exits, room_items, inv_items, room_characters):
+def menu(exits, room_items, inv_items, room_characters, current_room):
     """This function, given a dictionary of possible exits from a room, and a list
     of items found in the room and carried by the player, prints the menu of
     actions using print_menu() function. It then prompts the player to type an
@@ -335,7 +335,7 @@ def menu(exits, room_items, inv_items, room_characters):
     """
 
     # Display menu
-    print_menu(exits, room_items, inv_items, room_characters)
+    print_menu(exits, room_items, inv_items, room_characters, current_room)
 
     # Read player's input
     user_input = input("> ")
@@ -392,7 +392,7 @@ def main():
         print_inventory_items(inventory)
 
         # Show the menu with possible actions and ask the player
-        command = menu(current_room["exits"], current_room["items"], inventory, current_room["NPCs"])
+        command = menu(current_room["exits"], current_room["items"], inventory, current_room["NPCs"], current_room)
 
         # Execute the player's command
         execute_command(command)
