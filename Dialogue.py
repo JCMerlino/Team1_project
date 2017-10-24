@@ -1060,7 +1060,9 @@ stage_5Agent = {
 	Bruce : That's not much to go on.
 
 	Debra : You're a smart field agent. Figure it out. I'll keep these
-	evidence items safe. Go find the double agent.""",
+	evidence items safe. Go find the double agent. Try run the
+	fingerprints on the gun in the mainframe. Tell me when you have
+	found out.""",
 
 
 

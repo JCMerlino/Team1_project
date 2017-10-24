@@ -255,7 +255,7 @@ I think someone's diet plan is recommending questionable food choices.""",
 
     "exits": {"east": ("Office Bob", None)},
 
-    "items": [item_vault_key,item_mainframe_key],
+    "items": [item_vault_key, item_mainframe_key],
 
     "NPCs": []
 }

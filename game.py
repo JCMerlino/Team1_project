@@ -221,6 +221,9 @@ def print_menu(exits, room_items, inv_items, room_characters):
         for item in inv_items:
             print("GIVE {0} {1} to give {2} to {3}".format(item["id"].upper(), character["name"].upper(), item["name"], character["name"]))
 
+    if not stage_5Agent["Completion"] and STORY_EVIDENCE_FOUND in story_progress:
+        print("DOUBLE <insert name> to select double agent.")
+
     print("What do you want to do?")
 
 
@@ -312,6 +315,12 @@ def execute_command(command):
         else:
             print("Talk to who?")
 
+    elif command[0] == "double":
+        if len(command) > 1:
+            execute.double(command[1])
+        else:
+            print("Who again?")
+
     else:
         print("This makes no sense.")
 
@@ -357,6 +366,15 @@ def move(exits, direction):
 def end_condition():
     if (STORY_COFFEE_MADE in story_progress):
         coffee_ending()
+        return True
+    elif (STORY_INCORRECT_AGENT in story_progress):
+        fired_ending()
+        return True
+    elif (STORY_CHEST_SHOT in story_progress):
+        fired_ending()
+        return True
+    elif (STORY_LEG_SHOT in story_progress):
+        double_agent_ending()
         return True
     else:
         return False

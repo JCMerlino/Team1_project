@@ -139,6 +139,20 @@ class execute:
             else:
                 if "talked to {0}".format(current_room["NPCs"][pos_npc]["name"]) not in story_progress:
                     print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
+                else:
+                    print("You already talked to this person")
 
         else:
             print("You cannot talk to this person.")
+
+    def double(target_npc):
+        if not stage_5Agent["Completion"] and STORY_EVIDENCE_FOUND in story_progress:
+            if target_npc.capitalize() == "Jenifer":
+                print("Double jenifer")
+                story_progress.append(STORY_CORRECT_AGENT)
+            else:
+                print("wrong agent")
+                story_progress.append(STORY_INCORRECT_AGENT)
+                #skip to stage 9
+        else:
+            print("This makes no sense.")
