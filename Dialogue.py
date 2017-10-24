@@ -384,6 +384,8 @@ stage_3 = {
 	"Completion": False
 }
 
+stage_3_1 = {"Completion": False}
+
 stage_3_2 = {
 
 	"JeniferStart":
@@ -851,13 +853,8 @@ stage_6Coffee = {
 	Bruce : Yeah I kinda spend my whole day doing
 	pointless things.
 
-	Debra : Yeah you have.""",
-
-
-
-	"DebraRepeat":
-	"""Debra : What do I have to do to get you to run
-	errands for me?
+	Debra : Yeah you have. What do I have to do to
+	get you to run errands for me?
 
 	Bruce : I won't do errands for you.
 

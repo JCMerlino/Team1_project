@@ -364,7 +364,7 @@ def move(exits, direction):
 
 
 def end_condition():
-    if (STORY_COFFEE_MADE in story_progress):
+    if (STORY_USB_BACK in story_progress):
         coffee_ending()
         return True
     elif (STORY_INCORRECT_AGENT in story_progress):
@@ -384,6 +384,8 @@ def end_condition():
 def main():
     global current_room
     start_menu()
+
+    print(stage_1["Jenifer"])
 
     # Main game loop
     while not end_condition():

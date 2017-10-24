@@ -2,6 +2,7 @@ from game import *
 from map_new import rooms
 from storyline import *
 from Dialogue import *
+from talk_to_npc import *
 
 
 class execute:
@@ -19,8 +20,12 @@ class execute:
             if can_player_go_through_exit(current_room["exits"][direction]):
                 return rooms[current_room["exits"][direction][0]]
             else:
-                print("You cannot go there at the moment. Please complete your task first.")
-                return current_room
+                if not stage_1["Completion"]:
+                    print(stage_1["Leaving"])
+                    return current_room
+                else:
+                    print("You cannot go there at the moment. Please complete your task first.")
+                    return current_room
         else:
             print("You cannot go there")
             return current_room
@@ -41,6 +46,8 @@ class execute:
 
         if found and check_player_mass(pos, current_room):
                 inventory.append(current_room["items"].pop(pos))
+                if item_mainframe_key in inventory:
+                    stage_3_1["Completion"] = True
         elif not found:
             print("You cannot take that.")
         else:
@@ -130,17 +137,30 @@ class execute:
             else:
                 pos_npc += 1
         if found_npc:
-            if not stage_2["Completion"]:
-                story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
-                print("if not stage 2")
-            elif not stage_3["Completion"] and (current_room["NPCs"][pos_npc]["name"] == "Stephen"):
-                story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
-                print("after stage 3")
-            else:
-                if "talked to {0}".format(current_room["NPCs"][pos_npc]["name"]) not in story_progress:
-                    print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
-                else:
-                    print("You already talked to this person")
+            if target_npc == "samantha":
+                samantha_talks(current_room)
+            elif target_npc == "jenifer":
+                jenifer_talks(current_room)
+            elif target_npc == "debra":
+                debra_talks(current_room)
+            elif target_npc == "bob":
+                bob_talks(current_room)
+            elif target_npc == "stephen":
+                stephen_talks(current_room)
+            elif target_npc == "alexa":
+                alexa_talks(current_room)
+        #if found_npc:
+            #if found_npc and not stage_2["Completion"]:
+                #story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+                #print(stage_2["SamanthaStart"])
+            #elif not stage_3["Completion"] and (current_room["NPCs"][pos_npc]["name"] == "Stephen"):
+                #story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
+                #print("after stage 3")
+            #else:
+                #if "talked to {0}".format(current_room["NPCs"][pos_npc]["name"]) not in story_progress:
+                    #print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
+                #else:
+                    #print("You already talked to this person")
 
         else:
             print("You cannot talk to this person.")

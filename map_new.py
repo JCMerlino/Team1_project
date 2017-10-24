@@ -24,7 +24,7 @@ room_reception = {
     "name": "Reception",
 
     "description":
-    """Jenifer's office outside outside of Samantha's Office. Jenifer is sitting at her desk.""",
+    """Jenifer's office outside of Samantha's Office. Jenifer is sitting at her desk.""",
 
     "inspection":
     """Jenifer's office? I didn't think she got paid enough to earn herself an office. She has a basic desk and a
