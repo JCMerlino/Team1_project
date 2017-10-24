@@ -62,6 +62,7 @@ def samantha_talks(current_room):
 
 
 def jenifer_talks(current_room):
+    from player import story_progress
     global talks_progress
     if not stage_1["Completion"]:
         print(stage_1["Jenifer"])
@@ -98,6 +99,7 @@ def jenifer_talks(current_room):
 
 
 def debra_talks(current_room):
+    from player import story_progress
     global talks_progress
     if not stage_3["Completion"]:
         if not (STORY_TALKED_DEBRA_S2 in talks_progress):
@@ -130,6 +132,7 @@ def debra_talks(current_room):
 
 
 def bob_talks(current_room):
+    from player import story_progress
     global talks_progress
     if not stage_3["Completion"]:
         if not (STORY_TALKED_BOB_S2 in talks_progress):
@@ -192,6 +195,7 @@ def stephen_talks(current_room):
 
 
 def alexa_talks(current_room):
+    from player import story_progress
     global talks_progress
     if not stage_3["Completion"]:
         if not (STORY_TALKED_ALEXA_S2 in talks_progress):
