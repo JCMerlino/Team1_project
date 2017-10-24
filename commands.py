@@ -145,7 +145,7 @@ class execute:
         else:
             print("You cannot talk to this person.")
 
-    def double(target_npc):
+    def double(target_npc, current_room):
         if (STORY_EVIDENCE_FOUND in story_progress) and (current_room["name"] == "the Break Room"):
             if target_npc.capitalize() == "Jenifer":
                 print("Double jenifer")

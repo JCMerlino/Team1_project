@@ -108,19 +108,18 @@ def checkProgress(current_room):
             elif current_room["name"] == "the Break Room":
                 if STORY_CORRECT_AGENT in story_progress:
                     stage_5Agent["Completion"] = True
-                    choice = ""
-                    while choice != "chest" and choice != "leg":
+                    choice = []
+                    while choice != ["chest"] and choice != ["leg"]:
                         shoot = input("Shoot Jenifer in the CHEST or LEG: ")
                         choice = normalise_input(shoot)
-
-                    if choice == "chest":
+                    if choice == ["chest"]:
                         #run dialog stage 7
                         story_progress.append(STORY_CHEST_SHOT)
-                    elif choice == "leg":
+                    elif choice == ["leg"]:
                         #run dialog stage 8
                         story_progress.append(STORY_LEG_SHOT)
                 elif STORY_INCORRECT_AGENT in story_progress:
-                    stage5_Agent["Completion"] = True
+                    stage_5Agent["Completion"] = True
                     #run dialogue for stage 9
         #elif not stage_6Agent["Completion"] and STORY_CORRECT_AGENT in story_progress:
             ##run dialog stage 6

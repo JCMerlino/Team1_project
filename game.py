@@ -317,7 +317,7 @@ def execute_command(command):
 
     elif command[0] == "double":
         if len(command) > 1:
-            execute.double(command[1])
+            execute.double(command[1], current_room)
         else:
             print("Who again?")
 
@@ -398,9 +398,6 @@ def main():
         execute_command(command)
 
         checkProgress(current_room)
-
-    print("Congratulations! You finished the game!")
-
 
 # Are we being run as a script? If so, run main().
 # '__main__' is the name of the scope in which top-level code executes.
