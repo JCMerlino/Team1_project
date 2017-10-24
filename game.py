@@ -28,6 +28,7 @@ def list_of_items(items):
     """
     return ", ".join(item["name"] for item in items)
 
+
 def list_of_characters(npcs):
     return ", ".join(npc["name"] for npc in npcs)
 
@@ -58,10 +59,12 @@ def print_room_items(room):
         print("There is {0} here.".format(list_of_items(room["items"])))
         print()
 
+
 def print_room_characters(room):
     if len(room["NPCs"]) != 0:
         print("You see {0} here".format(list_of_characters(room["NPCs"])))
         print()
+
 
 def print_inventory_items(items):
     """This function takes a list of inventory items and displays it nicely, in a
@@ -73,7 +76,10 @@ def print_inventory_items(items):
     <BLANKLINE>
 
     """
-    print("You have {0}.\n".format(list_of_items(inventory)))
+    if inventory == []:
+        print("You have nothin in your inventor.\n")
+    else:
+        print("You have {0}.\n".format(list_of_items(inventory)))
 
 
 def print_room(room):
@@ -236,8 +242,9 @@ def is_valid_exit(exits, chosen_exit):
     """
     return chosen_exit in exits
 
+
 def can_player_go_through_exit(chosen_exit):
-    if chosen_exit[1] == None:
+    if chosen_exit[1] is None:
         return True
     elif chosen_exit[1] in inventory:
         return True

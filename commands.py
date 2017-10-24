@@ -1,6 +1,7 @@
 from game import *
 from map_new import rooms
 from storyline import *
+from Dialogue import *
 
 
 class execute:
@@ -81,7 +82,7 @@ class execute:
             if found:
                 print(item_id["picture"])
                 print(item_id["description"])
-                
+
             for pos in range(len(current_room["NPCs"])):
                 if inspected_object.capitalize() in current_room["NPCs"][pos]["name"]:
                     character_id = current_room["NPCs"][pos]
@@ -91,7 +92,7 @@ class execute:
                 pass
             else:
                 print("The object is not in the room")
-                
+
     def give(target_item, target_npc, current_room):
         found_npc = False
         found_item = False
@@ -108,7 +109,7 @@ class execute:
                 npc_inventory = current_room["NPCs"][pos_npc]
             else:
                 pos_npc += 1
-            
+
         if found_item and found_npc:
             npc_inventory["inventory"].append(inventory.pop(pos_item))
             print("You gave {0} to {1}".format(target_item, target_npc))
@@ -118,25 +119,26 @@ class execute:
             print("You do not have this.")
         else:
             print("You can not give this.")
-    
+
     def talk(target_npc, current_room):
         found_npc = False
         pos_npc = 0
         while not found_npc and pos_npc != len(current_room["NPCs"]):
             if current_room["NPCs"][pos_npc]["name"] == target_npc.capitalize():
                 found_npc = True
-                
+
             else:
                 pos_npc += 1
         if found_npc:
-            if not stage2:
+            if not stage_2["Completion"]:
                 story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
                 print("if not stage 2")
-            elif stage3 and (current_room["NPCs"][pos_npc]["name"] == "Stephen"):
+            elif not stage_3["Completion"] and (current_room["NPCs"][pos_npc]["name"] == "Stephen"):
                 story_progress.append("talked to {0}".format(current_room["NPCs"][pos_npc]["name"]))
                 print("after stage 3")
             else:
-                print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
-               
+                if "talked to {0}".format(current_room["NPCs"][pos_npc]["name"]) not in story_progress:
+                    print("You are talking to " + current_room["NPCs"][pos_npc]["name"])
+
         else:
             print("You cannot talk to this person.")
