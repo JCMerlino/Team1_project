@@ -73,7 +73,7 @@ stage_2 = {
 	We can't assign anything until new intel is
 	acquired.
 
-	Bruce : So bassically you're telling me I have
+	Bruce : So basically you're telling me I have
 	the day off.
 
 	Samantha : No I'm not giving you a day off.
@@ -231,7 +231,7 @@ stage_3 = {
 	Bruce : NO STEPHEN! Last time I put that on I 
 	woke up in a shower hugging a chicken. Besides 
 	Samantha said you have to take a look at the 
-	mainframe because its faulty orsomething and I have
+	mainframe because its faulty or something and I have
 	to help.
 
 	Stephen : Can't you see I'm a little busy at the
@@ -304,7 +304,7 @@ stage_3 = {
 	Bruce : Or maybe someone is supplementing their
 	nutritional intake with some keys.
 
-	Alexa : Well that's all I got on the where abouts
+	Alexa : Well that's all I got on the whereabouts
 	of the key. Don't say I didn't help.
 
 	Bruce : It wasn't much help. You've just told me
@@ -953,7 +953,7 @@ stage_4Agent = {
 	anonymous log. I think someone is up to something.
 
 	Debra : Hmm it would appear so... We need to have a
-	check around and see if there are any suspicous items
+	check around and see if there are any suspicious items
 	around the place. And by we I mean you because I need
 	to stay available to do work in case more comes.
 
@@ -1129,7 +1129,7 @@ stage_6Agent = {
 	Bruce : I always have good performance.
 
 	*click
-	*A bright flash filled the room acompanied by a deafening sound
+	*A bright flash filled the room accompanied by a deafening sound
 
 	Bruce : AARG What was that?
 
@@ -1167,7 +1167,7 @@ stage_7Agent = {
 
 	Bruce : Should we try and save her?
 
-	Samantha : Oh whats the point. She's practically unsavable now and
+	Samantha : Oh what's the point. She's practically unsavable now and
 	now she's gone we won't have an information leak. Just clean up
 	blood and dump her body somewhere.
 
@@ -1202,20 +1202,20 @@ stage_8Agent = {
 
 	Bruce : Thanks.
 
-	Samantha : Perfet. The bullet hasnt gone through the leg because it
+	Samantha : Perfet. The bullet hasn't gone through the leg because it
 	got caught on the shin bone. I'll see to it personally that Jenifer
 	spills the secrets. Maybe a knife pressing into this open wound would
 	persuade her to talk.
 
 	Bruce : Uhh since when have you been into this sort of thing?
 
-	Samantha : Oh I was very good at interogating from when I used to be
+	Samantha : Oh I was very good at interrogating from when I used to be
 	a field agent too.
 
 	Bruce : Shouldn't you check her in case she has another grenade?
 
 	Samantha : If she does she still won't be able to flee and that
-	definately means she won't use a lethal one if she has one.
+	definitely means she won't use a lethal one if she has one.
 
 	Bruce : Ok so all is under control.
 

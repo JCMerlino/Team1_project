@@ -43,7 +43,7 @@ item_login = {
     "mass": 0.2,
 
     "description":
-    """Trust Bob to leave his login details on a scrap peice of paper. Too
+    """Trust Bob to leave his login details on a scrap piece of paper. Too
     easy. Login:Bob Password:Brucesucks Considering how much I do for this
     service I think I deserve a little respect.""",
 
@@ -59,7 +59,7 @@ item_ink = {
 
     "description":
     """Am I the secretary as well? All Jenifer needs to do is replace the
-    ink cardtridge when the printer runs out of ink but no let the field agent
+    ink cartridge when the printer runs out of ink but no let the field agent
     do it because why the hell not! Come to think of I should file a complaint
     because I seem to be the only one who does any work around here. Everyone
     else just stands around in their rooms not even moving.""",
@@ -93,7 +93,7 @@ item_vault_key = {
 
     "description":
     """Urgh its still wet with toilet water. Makes me want to hurl. Why
-    the hell would anyone put it here? Or more worringly did someone eat it?
+    the hell would anyone put it here? Or more worryingly did someone eat it?
     Anyway maybe our security system should just not exist at all. At least
     this key only unlocks the outer door. Of course this means I also need
     the Vault Password as well.""",
@@ -127,7 +127,7 @@ item_mugs = {
 
     "description":
     """These mugs come from the break room. I have no idea why Stephen
-    needs these mugs. They aren't high tec or anything. Maybe he needs the
+    needs these mugs. They aren't high tech or anything. Maybe he needs the
     ceramics. I hope Debra and Jenifer don't mind me taking their ones. No
     way I'm letting my mug being destroyed. I won it for best hairstyle at
     a primary school faire""",
@@ -194,7 +194,7 @@ item_gun = {
 
 
     "description": 
-    """This was found hidden in the meeting room. Considering there are no agents 
+    """This was found hidden in the generator room. Considering there are no agents 
     in the field currently ,no one should have access to a gun at all. Perhaps I 
     should dust it for prints or whatever forensic people do. """,
 
@@ -210,7 +210,7 @@ item_camera = {
     "mass": 0.7,
 
     "description":
-    """I better find out who put this camera in the meeting room. Actuallymaybe 
+    """I better find out who put this camera in the meeting room. Actually, maybe 
     this camera was used to record important meetings by a mole or something. 
     Either way I don't want them finding out what else goes on in the meeting 
     room especially if involves me.""",
@@ -245,7 +245,7 @@ item_tech = {
     "mass": 1.5,
 
     "description":
-    """This intersting thingy is just blinking constantly. I hope it's a bomb. That will put me out my mysery. I should
+    """This interesting thingy is just blinking constantly. I hope it's a bomb. That will put me out my misery. I should
 probably give this to Stephen or show Debra.""",
 
     "picture": tech()

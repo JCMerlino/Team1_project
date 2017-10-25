@@ -11,7 +11,7 @@ room_stairs1 = {
     "inspection":
     """We have millions of pounds in funding but we can't afford an elevator.
 Stairs are physically traumatic and worse, these stairs lead to the ground 
-floor officeswhere all the underlings scurry about.""",
+floor offices where all the underlings scurry about.""",
 
     "exits": {"down": ("Stairs2", None), "west": ("Reception", None)},
 
@@ -59,10 +59,10 @@ room_samantha = {
     exactly a secret though. Her window has the lamest view of city life 
     possible. Who actually wants to look outside and see depressed city 
     workers going about their daily business? Two chairs are always facing 
-    her desk. One for the person she's fireing and one for the person she's 
+    her desk. One for the person she's firing and one for the person she's 
     hiring to take their place. Of course they both sit there at the same 
     time and it's supposed to strike fear into the new employees soul or 
-    something. Her desk is cluttered with "important" uninportant things 
+    something. Her desk is cluttered with "important" unimportant things 
     such as her mini big ben and electronic pencil sharpener. I think I see 
     a small microphone on her desk. I wonder if that is for Samantha to
     record the wails of her employees as she fires them.""",
@@ -131,7 +131,7 @@ room_office_debra = {
 
     "inspection":
     """Debra's desk is here but of course she isn't. No body does any work 
-    here but me I swear. Her desk is a tip. Crips wrappers everywhere. Coffee 
+    here but me I swear. Her desk is a tip. Crisp wrappers everywhere. Coffee 
     cups overflowing from her rubbish bin. She has no sense of organisation. 
     Her computer cables are everywhere. Wires are all over her floor and around 
     her desk. Someone could easily trip over her power lead or any of the cables 
@@ -160,10 +160,10 @@ room_science = {
     tried to create a mermaid by putting a pig's head on a fish's body. The 
     name just lets him get away with burning through cash and he justifies it 
     under "Scientific Research". All I know he spends enough time here for it 
-    to be his home. If anything judging by the ammount of time he spends 
+    to be his home. If anything judging by the amount of time he spends 
     alone, he's probably researching how to create an artificial girlfriend. 
     It would explain why there are so many humanoid creatures floating around 
-    in tanks. Come to think of it thats a bit freaky but no one really knows
+    in tanks. Come to think of it that's a bit freaky but no one really knows
     what he gets up to in here. We just assume he'll give us a boring 
     explanation if we ask.""",
 
@@ -185,7 +185,7 @@ room_break = {
     """So I guess Debra's job description is actually "snack connoisseur" 
     judging by the amount of time she spends here. No wonder we never have 
     any snacks. Actually I lie. We always have one snack at the bottom of 
-    the packet because break room rules dictate the person who finishes a 
+    the packet because break room rules dictate, the person who finishes a 
     snack has to buy the next packet. So of course Debra always pigs out and
     then the next person has to replace the snacks. She's currently by the 
     kitchen area going through a packet of doughnuts that Bob just bought 
@@ -215,8 +215,8 @@ room_meeting = {
     at one end of the room. Bob and Alexa are seated at the table.""",
 
     "inspection":
-    """The imfamous meeting room. Usually this room is only used for 
-    important breifings so it's no wonder there is usually no one in here. 
+    """The infamous meeting room. Usually this room is only used for 
+    important briefings so it's no wonder there is usually no one in here. 
     However both Bob and Alexa are at the table. This room has always been 
     quite bland and the projector is practically falling apart now. The 
     room has slowly degraded over the years however I don't remember that 
@@ -240,11 +240,11 @@ room_office_bob = {
     "inspection":
     """Suprise suprise Bob isn't at his desk. The real mystery is how the 
     hell this secret service manages to survive with employees that 
-    litterally do nothing all day. Bob's in charge of documents and 
+    literally do nothing all day. Bob's in charge of documents and 
     paperwork so his his desk is piled high with the stuff and his rubbish 
     bin is also filled with scrap paper and all kinds of junk. There seems 
     to be an envelope stuck out of the pile of documents. Wonder what that 
-    is for. There's a single scrap piece of paper on his keybaord. Perhaps 
+    is for. There's a single scrap piece of paper on his keyboard. Perhaps 
     it's his login details. I'm suprised there isn't any alcohol in sight. 
     This sort of job requires a truck load of motivation so I wonder how 
     he unwinds after it all.""",
@@ -270,7 +270,7 @@ room_storage = {
     but it seems no one cares about that. There is quite the range of things 
     in here. Whoever organises this area does an amazing job of it. With so 
     many items entering and exiting this room per day its unbelievable that 
-    it can still be sorted. The only part that isnt sorted is the miscelaneous 
+    it can still be sorted. The only part that isn't sorted is the miscellaneous 
     technology cabinet. Right now it looks like someone dumped heat plate
     circuitry outside it. Probably because it's full but I won't go find out 
     in case I have to clear it up.""",
@@ -290,7 +290,7 @@ room_toilet = {
 
     "inspection":
     """This place is suprisingly clean but I'm pretty sure someone did a stinker 
-    just not. You can smell it. Nothing else really to say except its a toilet 
+    just now. You can smell it. Nothing else really to say except its a toilet 
     but there is some shiny things at the bottom of the bowl. They look like keys.
     I think someone's diet plan is recommending questionable food choices.""",
 
@@ -364,7 +364,7 @@ room_computer = {
     "inspection":
     """The special computer before me has direct access to the mainframe. The things 
     I could do with this machine... I have to login first though. There is a card 
-    here which has the vault passcode on it. Someone left the damm thing lying around. 
+    here which has the vault passcode on it. Someone left the damn thing lying around. 
     Our security really is questionable. """,
 
     "exits": {"south": ("Hallway west", None)},
@@ -396,7 +396,7 @@ room_vault = {
 
     "description":
     """The vault is a high security storage space with an electronic password 
-    requirment as well as several locks. This is where all important items are kept.""",
+    requirement as well as several locks. This is where all important items are kept.""",
 
     "inspection":
     """This place is where people keep their dirty secrets. You wouldn't think it 
