@@ -100,32 +100,57 @@ class execute:
             else:
                 print("The object is not in the room")
 
-    def give(target_item, target_npc, current_room):
-        found_npc = False
-        found_item = False
-        pos_item = 0
-        pos_npc = 0
-        while not found_item and pos_item != len(inventory):
-            if inventory[pos_item]["id"] == target_item:
-                found_item = True
-            else:
-                pos_item += 1
-        while not found_npc and pos_npc != len(current_room["NPCs"]):
-            if current_room["NPCs"][pos_npc]["name"] == target_npc.capitalize():
-                found_npc = True
-                npc_inventory = current_room["NPCs"][pos_npc]
-            else:
-                pos_npc += 1
+    def give(target_item, target_npc, current_room, story_progress):
+        if (target_npc == "debra") or (target_npc == "stephen"):
+            found_npc = False
+            found_item = False
+            pos_item = 0
+            pos_npc = 0
+            while not found_item and pos_item != len(inventory):
+                if inventory[pos_item]["id"] == target_item:
+                    found_item = True
+                else:
+                    pos_item += 1
+            while not found_npc and pos_npc != len(current_room["NPCs"]):
+                if current_room["NPCs"][pos_npc]["name"] == target_npc.capitalize():
+                    found_npc = True
+                    npc_inventory = current_room["NPCs"][pos_npc]
+                else:
+                    pos_npc += 1
 
-        if found_item and found_npc:
-            npc_inventory["inventory"].append(inventory.pop(pos_item))
-            print("You gave {0} to {1}".format(target_item, target_npc))
-        elif found_item and not found_npc:
-            print("Give to who?")
-        elif not found_item:
-            print("You do not have this.")
+            if found_item and found_npc:
+                if (STORY_HAS_DIAGNOSTICS in story_progress) and (target_item == "vaultlog"):
+                        npc_inventory["inventory"].append(inventory.pop(pos_item))
+                        print("You gave {0} to {1}".format(target_item, target_npc))
+                elif target_npc == "stephen":
+                    if (STORY_HAS_TECH in story_progress) and (target_item == "tech"):
+                        npc_inventory["inventory"].append(inventory.pop(pos_item))
+                        print("You gave {0} to {1}".format(target_item, target_npc))
+                    elif (STORY_COFFEE_COLLECTION_STARTED in story_progress) and ((target_item == "mugs") or (target_item == "lead") or (target_item == "plate")):
+                        npc_inventory["inventory"].append(inventory.pop(pos_item))
+                        print("You gave {0} to {1}".format(target_item, target_npc))
+                    elif (STORY_COFFEE_MADE in story_progress) and (target_item == "usb"):
+                        npc_inventory["inventory"].append(inventory.pop(pos_item))
+                        print("You gave {0} to {1}".format(target_item, target_npc))
+                    else:
+                        print("{0}: Why would I want that?".format(target_npc.capitalize()))
+                elif target_npc == "debra":
+                    if (STORY_DOUBLE_STARTED in story_progress) and ((target_item == "camera") or (target_item == "recorder") or (target_item == "gun")):
+                        npc_inventory["inventory"].append(inventory.pop(pos_item))
+                        print("You gave {0} to {1}".format(target_item, target_npc))
+                    else:
+                        print("{0}: Why would I want that?".format(target_npc.capitalize()))
+            elif found_item and not found_npc:
+                print("Give to who?")
+            elif not found_item:
+                print("You do not have this.")
+            else:
+                print("You can not give this.")
         else:
-            print("You can not give this.")
+            if target_npc in ["debra", "samantha", "bob", "alexa", "jenifer", "stephen"]:
+                print("{0}: Why would I want that?".format(target_npc.capitalize()))
+            else:
+                print("Give to who?")
 
     def talk(target_npc, current_room):
         found_npc = False

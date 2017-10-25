@@ -76,7 +76,7 @@ def jenifer_talks(current_room):
             print(stage_2["JeniferRepeat"])
     elif not stage_3_2["Completion"]:
         print(stage_3["JeniferRepeat"])
-    elif not stage_3_3["Completion"]:
+    elif not stage_3_4["Completion"]:
         if not (STORY_TALKED_JENIFER_S32 in talks_progress):
             talks_progress.append(STORY_TALKED_JENIFER_S32)
             print(stage_3_2["JeniferStart"])

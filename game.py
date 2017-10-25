@@ -275,7 +275,7 @@ def execute_command(command):
     execute_take, or execute_drop, supplying the second word as the argument.
 
     """
-    global current_room
+    global current_room, story_progress
     if 0 == len(command):
         return
 
@@ -305,7 +305,7 @@ def execute_command(command):
 
     elif command[0] == "give":
         if len(command) >= 3:
-            execute.give(command[1], command[2], current_room)
+            execute.give(command[1], command[2], current_room, story_progress)
         else:
             print("Give what?")
 
