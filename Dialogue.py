@@ -27,6 +27,12 @@ stage_1 = {
 
 
 
+	"JeniferRepeat":
+	"""Jenifer : Go speak to Samantha before she gets 
+	mad and we both get in trouble.""",
+
+
+
 	"Leaving":
 	"""Jenifer : Where are you going? I told you
 	Samantha wants to speak to you! Do you not have
@@ -219,18 +225,19 @@ stage_3 = {
 	"""Bruce : Hey Stephen, Samantha told me to come
 	help you.
 
-	Stephen : Really!? Great! Come over here and attach
-	these to your nipples.
+	Stephen : Really!? Great! Come over here and put
+	this on your head.
 
-	Bruce : NO STEPHEN! She said you have to take a
-	look at the mainframe because its faulty or
-	something and I have to help.
+	Bruce : NO STEPHEN! Last time I put that on I 
+	woke up in a shower hugging a chicken. Besides 
+	Samantha said you have to take a look at the 
+	mainframe because its faulty orsomething and I have
+	to help.
 
 	Stephen : Can't you see I'm a little busy at the
 	moment?
 
-	Bruce : Yeah I see you're busy electrocuting your
-	nipples "for science".
+	Bruce : Yeah, busy messing with people's brains.
 
 	Stephen : Well I'm busy so I can't help right now
 
@@ -276,10 +283,10 @@ stage_3 = {
 	Alexa : Why would I know? Why didn't you ask
 	Stephen?
 
-	Bruce : I tried but he was too busy fiddling with
-	his nipples.
+	Bruce : I tried but he was too busy toying with 
+	people's brains.
 
-	Alexa : Oh God too much information.
+	Alexa : Oh God not again.
 
 	Bruce : Anyway I need the dam key to get into the
 	mainframe room. You seen it anywhere?
@@ -662,17 +669,17 @@ stage_5Coffee = {
 	Bruce : In that case can I have your power plug?
 
 	Jenifer : Of course not. I'm watching Netflix.
-	Don't worry. If you finish work quickly I might
-	invite you to chill with me.
 
-	Bruce : I'll consider it. I guess I'll have to
-	find someone else who does no work.""",
+	Bruce : That's not work.
+
+	Jenifer : But I will miss the power plug.
+
+	Bruce : Fine, I'll find another one.""",
 
 
 
 	"JeniferRepeat":
-	"""Jenifer : Hurry and finish your work so we
-	can chill together.""",
+	"""Jenifer : How's it going errand boy?.""",
 
 
 
@@ -837,8 +844,7 @@ stage_6Coffee = {
 
 
 	"JeniferRepeat":
-	"""Jenifer : Sorry Bruce netflix mood has passed.
-	Maybe next time...""",
+	"""Jenifer : Still not finished fetching things yet?""",
 
 
 
@@ -850,7 +856,7 @@ stage_6Coffee = {
 
 	Debra : Really?
 
-	Bruce : Yeah I kinda spend my whole day doing
+	Bruce : Yeah I kinda spent my whole day doing
 	pointless things.
 
 	Debra : Yeah you have. What do I have to do to
@@ -924,14 +930,12 @@ stage_7Coffee = {
 	Bruce : Sure thing.
 
 	Stephen : Now about your internet usage. I think you
-	need to see someone about your pornography addiction.
-	Not necessarily the frequency but the content...
+	need to see someone about your internet usage. I think
+	you have a problem...
 
 	Bruce : WHAT DO YOU KNOW?
 
-	Stephen : Too much...
-
-	GAME END - INSERT CREDITS HERE?""",
+	Stephen : Too much...""",
 
 	"Completion": False
 }
@@ -942,9 +946,9 @@ stage_4Agent = {
 	"""Bruce : Hi Debra I have something you might want
 	to take a look at.
 
-	Debra : You better not mean your manhood.
+	Debra : Is it more snacks?.
 
-	Bruce : Uh what? Anyway these logs that printed after
+	Bruce : Um no Anyway these logs that printed after
 	Stephen's fix worked look wrong. There shouldn't be an
 	anonymous log. I think someone is up to something.
 
@@ -1186,9 +1190,7 @@ stage_7Agent = {
 
 	Bruce : For shooting a double agent.
 
-	Alexa : I just don't get Samantha sometimes...
-
-	GAME END - INSERT CREDITS HERE?""",
+	Alexa : I just don't get Samantha sometimes...""",
 
 	"Completion": False
 }
@@ -1222,9 +1224,7 @@ stage_8Agent = {
 	blood stains.
 
 	Bruce : So I guess something interesting did eventually happen today.
-	Shame I'm still doing errands for people.
-
-	GAME END - INSERT CREDITS HERE?""",
+	Shame I'm still doing errands for people.""",
 
 	"Completion": False
 }
@@ -1252,9 +1252,7 @@ stage_9Agent = {
 
 	Bruce : Come on you haven't even given me a chance to explain myself.
 
-	Samantha : You don't have to! OUT!
-
-	GAME END - INSERT CREDITS HERE?""",
+	Samantha : You don't have to! OUT!""",
 
 	"Completion": False
 }
