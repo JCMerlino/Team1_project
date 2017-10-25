@@ -8,13 +8,13 @@ item_usb = {
 
     "description":
     """Stephen gave me this USB with his so called "Mainframe Fix" on it.
-The last time he handed me one of these he left multiple viruses on it that 
-destroyed the computer I was working on and made me lose all my work. He
-told me to plug this into the mainframe and log on. Of course he didn't give
-me the login details so I'll have to go find out some. I'm sure it would have
-made my life a lot easier if he gave me details but I assume he wants me to
-use someone else's account so the blame goes on them if it screws up. Pretty
-smart. I think I'll screw up Bob's account.""",
+    The last time he handed me one of these he left multiple viruses on it that 
+    destroyed the computer I was working on and made me lose all my work. He
+    told me to plug this into the mainframe and log on. Of course he didn't give
+    me the login details so I'll have to go find out some. I'm sure it would have
+    made my life a lot easier if he gave me details but I assume he wants me to
+    use someone else's account so the blame goes on them if it screws up. Pretty
+    smart. I think I'll screw up Bob's account.""",
 
     "picture": memory_stick()
 }
@@ -28,12 +28,9 @@ item_mainframe_key = {
 
     "description":
     """Well we just won the worst security system award of the year.
-Seriously this is a physical key that unlocks the door to the mainframe.
-I mean, someone would still have to hack the mainframe but man why just a
-single key? Anyone could just pick that lock. Wait... I knew it! I didn't
-search up furry porn when I was blackout drunk it was Stephen who picked
-the lock and changed the mainframe entries. Such a dick. Come to think of
-it now it is pretty funny. Maybe I should get him to do it on Bob."""
+    Seriously this is a physical key that unlocks the door to the mainframe.
+    I mean, someone would still have to hack the mainframe but man why just a
+    single key? Anyone could just pick that lock."""
 }
 
 item_login_details = {
@@ -45,8 +42,8 @@ item_login_details = {
 
     "description":
     """Trust Bob to leave his login details on a scrap peice of paper. Too
-easy. Login:Bob Password:Brucesucks Considering how much I do for this
-service I think I deserve a little respect."""
+    easy. Login:Bob Password:Brucesucks Considering how much I do for this
+    service I think I deserve a little respect."""
 }
 
 item_ink = {
@@ -58,10 +55,10 @@ item_ink = {
 
     "description":
     """Am I the secretary as well? All Jenifer needs to do is replace the
-ink cardtridge when the printer runs out of ink but no let the field agent
-do it because why the hell not! Come to think of I should file a complaint
-because I seem to be the only one who does any work around here. Everyone
-else just stands around in their rooms not even moving."""
+    ink cardtridge when the printer runs out of ink but no let the field agent
+    do it because why the hell not! Come to think of I should file a complaint
+    because I seem to be the only one who does any work around here. Everyone
+    else just stands around in their rooms not even moving."""
 }
 
 item_vault_log = {
@@ -73,10 +70,10 @@ item_vault_log = {
 
     "description":
     """So printed out on this piece of paper is every item in the vault.
-Apparently Stephen can see if there is something fishy based on the times
-and entries of the information. There is a weird entry here. It doesn't 
-look official. Maybe someone is up to something. Maybe I should give this
-to Debra instead..."""
+    Apparently Stephen can see if there is something fishy based on the times
+    and entries of the information. There is a weird entry here. It doesn't 
+    look official. Maybe someone is up to something. Maybe I should give this
+    to Debra instead..."""
 }
 
 item_vault_key = {
@@ -88,10 +85,10 @@ item_vault_key = {
 
     "description":
     """Urgh its still wet with toilet water. Makes me want to hurl. Why
-the hell would anyone put it here? Or more worringly did someone eat it?
-Anyway maybe our security system should just not exist at all. At least
-this key only unlocks the outer door. Of course this means I also need
-the Vault Password as well."""
+    the hell would anyone put it here? Or more worringly did someone eat it?
+    Anyway maybe our security system should just not exist at all. At least
+    this key only unlocks the outer door. Of course this means I also need
+    the Vault Password as well."""
 }
 
 item_vault_pass = {
@@ -103,10 +100,10 @@ item_vault_pass = {
 
     "description":
     """Well at least the actual password for the vault is decent. 10
-digit number which is like a lot of combinations. 1544973268 is the
-password I'm glad this password is decent. I put my trust in this password
-to guard my secrets. I don't know why people think I have a problemwhen 
-I clearly don't"""
+    digit number which is like a lot of combinations. 1544973268 is the
+    password I'm glad this password is decent. I put my trust in this password
+    to guard my secrets. I don't know why people think I have a problemwhen 
+    I clearly don't"""
 }
 
 item_mugs = {
@@ -118,10 +115,10 @@ item_mugs = {
 
     "description":
     """These mugs come from the break room. I have no idea why Stephen
-needs these mugs. They aren't high tec or anything. Maybe he needs the
-ceramics. I hope Debra and Jenifer don't mind me taking their ones. No
-way I'm letting my mug being destroyed. I won it for best hairstyle at
-a primary school faire"""
+    needs these mugs. They aren't high tec or anything. Maybe he needs the
+    ceramics. I hope Debra and Jenifer don't mind me taking their ones. No
+    way I'm letting my mug being destroyed. I won it for best hairstyle at
+    a primary school faire"""
 }
 
 item_power_lead = {
@@ -192,9 +189,9 @@ item_camera = {
 
     "description":
     """I better find out who put this camera in the meeting room. Actuallymaybe 
-    this camera was used to record important meetings by a mole or something. Either
-way I don't want them finding out what else goes on in the meeting room especially if
-involves me."""
+    this camera was used to record important meetings by a mole or something. 
+    Either way I don't want them finding out what else goes on in the meeting 
+    room especially if involves me."""
 }
 
 item_recorder = {
@@ -205,11 +202,11 @@ item_recorder = {
     "mass": 0.5,
 
     "description": 
-    """This isn't Samanthas so this was obviously put in Samantha's room to eavesdrop 
-    on her conversations. I wouldn't be suprised if it was one of us who put it there 
-    because she makes shady deals with other organisations that really screw us over. 
-    Though this might be linked to the camera and about gathering important 
-    information. Wouldn't that be embarrassing... If the professional spies were being
-    spied on. I should probably alert Debra about a possible double agent"""
-
+    """This isn't Samanthas so this was obviously put in Samantha's room to 
+    eavesdrop on her conversations. I wouldn't be suprised if it was one of us
+    who put it there because she makes shady deals with other organisations 
+    that really screw us over. Though this might be linked to the camera and 
+    about gathering important information. Wouldn't that be embarrassing... 
+    If the professional spies were being spied on. I should probably alert 
+    Debra about a possible double agent"""
 }
